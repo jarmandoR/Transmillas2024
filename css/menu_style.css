@@ -1,0 +1,38 @@
+   
+li.on:hover ul,  li.over ul { /*for ie*/
+   background: #0066CC;
+}
+
+ li.on:hover ul a,  li.over ul li a { /*for ie - the specificity is necessary*/
+      background: #0066CC;
+   }
+
+@media Screen, Projection { 
+   ul li:hover > ul { top:28px; }
+    ul > ul {top:20px;}
+   }
+   
+ ul > li {
+   top:2px;
+   left: 0px;
+   }
+   
+
+
+ul:hover ul, ul.over ul{ display: block; }
+/* Styles for Menu Items */
+
+.menu a 
+{
+}
+
+#menu ul{
+   list-style-type: none;
+   text-align: center;
+} 
+
+#menu li{
+   display: inline;
+   text-align: center;
+   margin: 0 2px 0 0;
+} 

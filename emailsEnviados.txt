@@ -1,0 +1,434 @@
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br>Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br>Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br>Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br>Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br>Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br>Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4487 Vencida el 2024-05-03 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4522 Vencida el 2024-05-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br>Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br>Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br>Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br>Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br>Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br>Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br>Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br>Factura 4882 Vencida el 2024-06-01 No se encontro correo del credito ALIQUALITY SAS   <br>Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br>Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br>Factura 4995 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4996 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5010 Vencida el 2024-07-21 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br>Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br>Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br>Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br>Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br>Factura 5112 Vencida el 2024-08-04 No se encontro correo del credito ALIQUALITY SAS   <br>Factura 5146 Vencida el 2024-08-08 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5157 Vencida el 2024-08-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br>Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br>Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br>Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br>Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br>Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br>Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br>Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br>Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br>Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br>Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br>Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4487 Vencida el 2024-05-03 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4522 Vencida el 2024-05-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br>Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br>Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br>Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br>Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br>Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br>Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br>Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br>Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br>Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br>Factura 4995 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4996 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5010 Vencida el 2024-07-21 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br>Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br>Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br>Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br>Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br>Factura 5112 Vencida el 2024-08-04 No se encontro correo del credito ALIQUALITY SAS   <br>Factura 5146 Vencida el 2024-08-08 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5157 Vencida el 2024-08-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br>Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br>Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br>Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br>Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br>Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br>Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br>Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br>Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br>Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br>Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br>Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4487 Vencida el 2024-05-03 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4522 Vencida el 2024-05-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br>Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br>Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br>Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br>Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br>Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br>Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br>Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br>Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br>Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br>Factura 4995 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4996 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5010 Vencida el 2024-07-21 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br>Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br>Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br>Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br>Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br>Factura 5112 Vencida el 2024-08-04 No se encontro correo del credito ALIQUALITY SAS   <br>Factura 5146 Vencida el 2024-08-08 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5157 Vencida el 2024-08-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br>Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br>Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br>Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br>Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br>Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br>Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br>Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br>Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br>Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br>Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br>Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4487 Vencida el 2024-05-03 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4522 Vencida el 2024-05-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br>Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br>Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br>Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br>Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br>Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br>Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br>Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br>Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br>Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br>Factura 4995 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4996 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5010 Vencida el 2024-07-21 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br>Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br>Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br>Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br>Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br>Factura 5146 Vencida el 2024-08-08 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5157 Vencida el 2024-08-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br>Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br>Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br>Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br>Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br>Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br>Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br>Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br>Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br>Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br>Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br>Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4487 Vencida el 2024-05-03 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4522 Vencida el 2024-05-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br>Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br>Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br>Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br>Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br>Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br>Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br>Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br>Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br>Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br>Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br>Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br>Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br>Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br>Factura 4995 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 4996 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5010 Vencida el 2024-07-21 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br>Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br>Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br>Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br>Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br>Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br>Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br>Factura 5146 Vencida el 2024-08-08 No se encontro correo del credito PRINTING DELIVERY S A  <br>Factura 5157 Vencida el 2024-08-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br>Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br>Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br>Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br>Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br>Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br>Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br>Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br>
+
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br> 
+Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4487 Vencida el 2024-05-03 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4522 Vencida el 2024-05-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br> 
+Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br> 
+Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4995 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 4996 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 5010 Vencida el 2024-07-21 No se encontro correo del credito PRINTING DELIVERY S A  <br> 
+Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br> 
+Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br> 
+Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br> 
+Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br> 
+Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 5146 Vencida el 2024-08-08 No se encontro correo del credito PRINTING DELIVERY S A  <br> 
+Factura 5157 Vencida el 2024-08-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br> 
+Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br> 
+Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br> 
+Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br> 
+Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br> 
+Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br> 
+Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4487 Vencida el 2024-05-03 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4522 Vencida el 2024-05-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br> 
+Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br> 
+Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4995 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 4996 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 5010 Vencida el 2024-07-21 No se encontro correo del credito PRINTING DELIVERY S A  <br> 
+Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br> 
+Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br> 
+Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br> 
+Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br> 
+Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 5146 Vencida el 2024-08-08 No se encontro correo del credito PRINTING DELIVERY S A  <br> 
+Factura 5157 Vencida el 2024-08-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br> 
+Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br> 
+Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br> 
+Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br> 
+Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br> 
+Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br> 
+Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4487 Vencida el 2024-05-03 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4522 Vencida el 2024-05-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br> 
+Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br> 
+Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4995 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 4996 Vencida el 2024-07-20 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 5010 Vencida el 2024-07-21 No se encontro correo del credito PRINTING DELIVERY S A  <br> 
+Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br> 
+Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br> 
+Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br> 
+Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br> 
+Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 5146 Vencida el 2024-08-08 No se encontro correo del credito PRINTING DELIVERY S A  <br> 
+Factura 5157 Vencida el 2024-08-09 Se envia al correo aprendizcompras@estrellaies.com Alerta <br> 
+Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br> 
+Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br> 
+Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br> 
+Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br> 
+Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br> 
+Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+
+
+
+
+
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo jose523a@gmail.com Alerta <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo jose523a@gmail.com Alerta <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo jose523a@gmail.com Alerta <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo jose523a@gmail.com Alerta <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo jose523a@gmail.com Alerta <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo jose523a@gmail.com Alerta <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo jose523a@gmail.com Alerta <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br> 
+Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4487 Vencida el 2024-05-03 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4522 Vencida el 2024-05-09 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br> 
+Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br> 
+Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4995 Vencida el 2024-07-20 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 4996 Vencida el 2024-07-20 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 5010 Vencida el 2024-07-21 Se envia al correo a.corresponsales@prindel.com.co Alerta <br> 
+Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br> 
+Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br> 
+Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br> 
+Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br> 
+Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 5146 Vencida el 2024-08-08 Se envia al correo a.corresponsales@prindel.com.co Alerta <br> 
+Factura 5157 Vencida el 2024-08-09 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br> 
+Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br> 
+Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br> 
+Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br> 
+Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br> 
+Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4241 Vencida el 2024-03-19 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4407 Vencida el 2024-04-15 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br> 
+Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4487 Vencida el 2024-05-03 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4522 Vencida el 2024-05-09 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4540 Vencida el 2024-05-12 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br> 
+Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br> 
+Factura 4801 Vencida el 2024-06-22 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4980 Vencida el 2024-07-18 No se encontro correo del credito INDEPENDENCE  <br> 
+Factura 4995 Vencida el 2024-07-20 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 4996 Vencida el 2024-07-20 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 5010 Vencida el 2024-07-21 Se envia al correo a.corresponsales@prindel.com.co Alerta <br> 
+Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br> 
+Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br> 
+Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br> 
+Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br> 
+Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 5146 Vencida el 2024-08-08 Se envia al correo a.corresponsales@prindel.com.co Alerta <br> 
+Factura 5157 Vencida el 2024-08-09 Se envia al correo alpena@estrellaies.com Alerta <br> 
+Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br> 
+Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br> 
+Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br> 
+Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br> 
+Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br> 
+Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5334 Vencida el 2024-08-01 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4170 Vencida el 2024-02-02 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4241 Vencida el 2024-03-19 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4338 Vencida el 2024-04-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4407 Vencida el 2024-04-15 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br> 
+Factura 4473 Vencida el 2024-05-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4490 Vencida el 2024-05-03 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4540 Vencida el 2024-05-12 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4678 Vencida el 2024-06-03 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4695 Vencida el 2024-06-06 No se encontro correo del credito TRANSLACOR SAS  <br> 
+Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br> 
+Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br> 
+Factura 4801 Vencida el 2024-06-22 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 4875 Vencida el 2024-06-01 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br> 
+Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br> 
+Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+Factura 4980 Vencida el 2024-07-18 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br> 
+Factura 5078 Vencida el 2024-07-02 No se encontro correo del credito COMPROLAB SAS  <br> 
+Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br> 
+Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br> 
+Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br> 
+Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br> 
+Factura 5146 Vencida el 2024-08-08 Se envia al correo a.corresponsales@prindel.com.co Alerta <br> 
+Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br> 
+Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br> 
+Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br> 
+Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br> 
+Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br> 
+Factura 5241 Vencida el 2024-08-23 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+Factura 5259 Vencida el 2024-08-25 No se encontro correo del credito HTC  <br> 
+Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+Factura 5466 Vencida el 2024-08-26 Se envia al correo alpena@estrellaies.com Alerta <br> 
+
+Factura 4168 Vencida el 2024-02-02 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+_2024-08-27Factura 4170 Vencida el 2024-02-02 Se envia al correo translacorbucaramanga@hotmail.com Alerta <br> 
+_2024-08-27Factura 4241 Vencida el 2024-03-19 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+_2024-08-27Factura 4332 Vencida el 2024-04-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+_2024-08-27Factura 4338 Vencida el 2024-04-03 Se envia al correo translacorbucaramanga@hotmail.com Alerta <br> 
+_2024-08-27Factura 4353 Vencida el 2024-04-05 No se encontro correo del credito WEATHERFORD  <br> 
+_2024-08-27Factura 4363 Vencida el 2024-03-08 No se encontro correo del credito WEATHERFORD  <br> 
+_2024-08-27Factura 4390 Vencida el 2024-04-13 No se encontro correo del credito WEATHERFORD  <br> 
+_2024-08-27Factura 4407 Vencida el 2024-04-15 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+_2024-08-27Factura 4468 Vencida el 2024-05-02 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+_2024-08-27Factura 4472 Vencida el 2024-05-02 No se encontro correo del credito FUNDACION EL ALCARAVAN  <br> 
+_2024-08-27Factura 4473 Vencida el 2024-05-02 Se envia al correo cartera@comprolab.com Alerta <br> 
+_2024-08-27Factura 4488 Vencida el 2024-05-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+_2024-08-27Factura 4490 Vencida el 2024-05-03 Se envia al correo translacorbucaramanga@hotmail.com Alerta <br> 
+_2024-08-27Factura 4523 Vencida el 2024-05-09 No se encontro correo del credito SEFARCOL  <br> 
+_2024-08-27Factura 4524 Vencida el 2024-04-15 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+_2024-08-27Factura 4540 Vencida el 2024-05-12 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+_2024-08-27Factura 4674 Vencida el 2024-06-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+_2024-08-27Factura 4678 Vencida el 2024-06-03 Se envia al correo cartera@comprolab.com Alerta <br> 
+_2024-08-27Factura 4695 Vencida el 2024-06-06 Se envia al correo translacorbucaramanga@hotmail.com Alerta <br> 
+_2024-08-27Factura 4696 Vencida el 2024-06-06 No se encontro correo del credito SEFARCOL  <br> 
+_2024-08-27Factura 4697 Vencida el 2024-06-06 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+_2024-08-27Factura 4702 Vencida el 2024-06-07 No se encontro correo del credito GENSER POWER  <br> 
+_2024-08-27Factura 4719 Vencida el 2024-05-09 No se encontro correo del credito HERNAN ESCOBAR POSADA  <br> 
+_2024-08-27Factura 4744 Vencida el 2024-06-14 No se encontro correo del credito PROYECTO ESTABILIZACION DED ELECTRICA CABUYARO CAMPO BONITO SAS  <br> 
+_2024-08-27Factura 4801 Vencida el 2024-06-22 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+_2024-08-27Factura 4872 Vencida el 2024-06-01 No se encontro correo del credito OPTICA NUEVA  <br> 
+_2024-08-27Factura 4875 Vencida el 2024-06-01 Se envia al correo cartera@comprolab.com Alerta <br> 
+_2024-08-27Factura 4880 Vencida el 2024-06-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+_2024-08-27Factura 4881 Vencida el 2024-06-01 No se encontro correo del credito SEFARCOL  <br> 
+_2024-08-27Factura 4886 Vencida el 2024-06-04 No se encontro correo del credito IPS UNIDAD RENAL DEL SARARE S.A.S  <br> 
+_2024-08-27Factura 4891 Vencida el 2024-06-04 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+_2024-08-27Factura 4892 Vencida el 2024-07-04 No se encontro correo del credito WEATHERFORD  <br> 
+_2024-08-27Factura 4914 Vencida el 2024-06-06 No se encontro correo del credito ANDRES ZULUAGA / MEGATECNOLOGY  <br> 
+_2024-08-27Factura 4980 Vencida el 2024-07-18 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+_2024-08-27Factura 5040 Vencida el 2024-07-26 No se encontro correo del credito HTC  <br> 
+_2024-08-27Factura 5078 Vencida el 2024-07-02 Se envia al correo cartera@comprolab.com Alerta <br> 
+_2024-08-27Factura 5083 Vencida el 2024-08-03 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+_2024-08-27Factura 5091 Vencida el 2024-08-03 No se encontro correo del credito MEDICINA Y TECNOLOGIA EN SALUD SAS  <br> 
+_2024-08-27Factura 5095 Vencida el 2024-08-03 No se encontro correo del credito SKANHAWK SAS  <br> 
+_2024-08-27Factura 5105 Vencida el 2024-08-04 No se encontro correo del credito PRECIMEC  <br> 
+_2024-08-27Factura 5106 Vencida el 2024-08-04 No se encontro correo del credito KALU DE COLOMBIA SAS  <br> 
+_2024-08-27Factura 5111 Vencida el 2024-08-04 No se encontro correo del credito OPTICA NUEVA  <br> 
+_2024-08-27Factura 5146 Vencida el 2024-08-08 Se envia al correo a.corresponsales@prindel.com.co Alerta <br> 
+_2024-08-27Factura 5176 Vencida el 2024-08-11 No se encontro correo del credito HALLIBURTON  <br> 
+_2024-08-27Factura 5179 Vencida el 2024-08-12 No se encontro correo del credito HTC  <br> 
+_2024-08-27Factura 5180 Vencida el 2024-08-12 No se encontro correo del credito COLCAN  <br> 
+_2024-08-27Factura 5196 Vencida el 2024-08-15 No se encontro correo del credito AMERICAN TUBULAR SERVICES SAS  <br> 
+_2024-08-27Factura 5238 Vencida el 2024-07-23 No se encontro correo del credito CROYDON  <br> 
+_2024-08-27Factura 5241 Vencida el 2024-08-23 Se envia al correo areatesoreria@independence.com.co Alerta <br> 
+_2024-08-27Factura 5259 Vencida el 2024-08-25 No se encontro correo del credito HTC  <br> 
+_2024-08-27_2024-08-27_2024-08-27Factura 5316 Vencida el 2024-07-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+_2024-08-27Factura 5317 Vencida el 2024-08-01 Se envia al correo milenacastro@mcsconsultoria.com Alerta <br> 
+_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27Factura 5466 Vencida el 2024-08-26 Se envia al correo alpena@estrellaies.com Alerta <br> 
+_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27_2024-08-27

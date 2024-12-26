@@ -1,0 +1,109 @@
+.clear{
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    line-height: 0;
+}
+.clearfix{
+    overflow: hidden;
+}
+.italic{
+    font-style: italic;
+}
+/******* /GENERAL RESET *******/
+
+/******* GENERAL *******/
+/******* /GENERAL *******/
+
+/******* MENU *******/
+#container1{
+    width:100%;
+	position:relative;
+}
+#container1 ul{
+    list-style:none;
+    list-style-position:outside;
+	z-index:20;
+	left:2px;
+}
+
+#container1 ul.menu_a li{
+    float:left;
+    margin-right:4px;
+    margin-bottom:-1px;
+}
+
+#container1 ul.menu_a li{
+    font-weight:700;
+    display:block;
+    background:#074F91;
+    margin-bottom:-1px;
+    border:1px solid #3e3e3e;
+    position:relative;
+    color:#FFFFFF;
+    cursor:pointer;
+    border-radius:2px 2px 0 0;
+    -moz-border-radius:2px 2px 0 0;
+    -webkit-border-radius:2px 2px 0 0;
+	text-align:center;
+	vertical-align:middle;
+	font-family:Verdana;
+	font-size:12px;
+	padding-top:10px;
+}
+
+#container1 ul.menu_a li:hover{
+    color:#fff;
+}
+#container1 ul.menu_a li.active{
+    background:#FFFFFF;
+    top:1px;
+    border-bottom:0;
+    color:#1D3B6C;
+}
+.content{
+    margin:0pt auto;
+    background:#FFFFFF;
+    border:1px solid #3e3e3e;
+    text-align:left;
+    padding:1.0em;
+    padding-bottom:0px;
+    font-size:12px;
+    line-height:2em;
+    color:#8C8C8C;
+    border-radius:0 2px 2px 2px;
+    -moz-border-radius:0 2px 2px 2px;
+    -webkit-border-radius:0 2px 2px 2px;
+	height:100%;
+}
+
+.content2{
+    margin:0pt auto;
+    background:#FFFFFF;
+    border:1px solid #3e3e3e;
+    text-align:left;
+    padding:1.0em;
+    padding-bottom:0px;
+    font-size:12px;
+    line-height:2em;
+    color:#8C8C8C;
+    border-radius:0 2px 2px 2px;
+    -moz-border-radius:0 2px 2px 2px;
+    -webkit-border-radius:0 2px 2px 2px;
+	height:470px;
+}
+.content2.ddiv9{ display:none; }
+.content2.ddiv10{ display:none; }
+
+.content.dddiv1{ display:block; }
+.content.dddiv2{ display:none; }
+.content.dddiv3{ display:none; }
+.content.dddiv4{ display:none; }
+.content.dddiv5{ display:none; }
+.content.dddiv6{ display:none; }
+.content.dddiv7{ display:none; }
+.content.dddiv8{ display:none; }
+.content.modificaciones{ display:none; }
+.content.sactividades3{ display:none; }
+.content.imagenes{ display:none; }

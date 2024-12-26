@@ -1,0 +1,41 @@
+
+  
+  .drop__card, .drop__data{
+    display: flex;
+    align-items: center;
+  }
+  
+  .drop__card{
+    justify-content: space-between;
+    padding: 3rem 1.25rem .55rem .55rem;
+    background-color: #F8F8FC;
+    box-shadow: 4px 4px 16px #E1E1E1, -2px -2px 16px #FFF;
+    margin-bottom: 10px;
+  }
+  .drop__card:hover{
+    cursor: pointer;
+  }
+  
+ 
+  .drop__name{
+    font-size: 1rem;
+    color: #263fbf;
+    font-weight: 500;
+  }
+  
+  .drop__dir{
+    font-size: 1rem;
+    color: #0d0d0e;
+  }
+    
+  /* Class name for the chosen item */
+  .sortable-chosen{
+    box-shadow: 8px 8px 32px #E1E1E1;
+  }
+  
+  /* Class name for the dragging item */
+  .sortable-drag{
+    opacity: 0;
+  }
+  
+  

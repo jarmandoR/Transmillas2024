@@ -1,0 +1,24 @@
+correguir errores de las guia que se genere es la que se envia 
+al validar guias cuando sea no colocar la columna en rojo.
+modulo de paquetes perdidos. paquetes que no llegaron a las ciudades.
+colocar campo de preguntar por en recoleccion de datos.
+en guias par promotores separar y verificar en el transmillas login estan repetidas
+modulo oficina ,entrega, recogida. 
+el administrador encargado de dar cuentas  x ciudad,
+
+error en entregar en devolver recibido.
+LIMITAR CAMPO DE SEDE EN CUENTAS POR CIUDAD Y POR OPERADOR,
+OPERARIO DE OFICINA Y OPERADOR EN CUENTAS.. Y ADMINISTRADORES.
+FALTA CAMPO DE AL COBRO DE CONTADO, DE CONTADO EN EL NUEVO MODULO.
+EN EL MODULO DE CUENTAS OPERADOR HAY QUE RESTRINGI EL CAMPO OPERADOR DE SELECCIONE.
+MODULO DE OPERARIO PARA RECOLECTAR DATOS.
+
+EN PESAR HAY QUE RELACIONAR LA GUIA EN PESAR CONEL CONSECUTIVO DE PAPEL..
+CREAR EL NUMERO DE GUIA EN EL MODULO DE RECOGER DATOS CUNDO ES OFICINA.
+
+reporte de creditos en busca de fechas, por cliente, y opcion de general factural agregando un numero de guia. 
+ en caja menor una opcion de validar la consignacion.
+""mirar como agregar algo para confirmar un pago del flete al carro.""
+
+
+

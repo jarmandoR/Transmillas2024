@@ -1,0 +1,548 @@
+#header2{
+	top:0px;
+	left:0%;
+	position: absolute;
+	position:fixed !important;
+	width: 100%;
+	padding-top: 0px;
+	height: 44px;
+	background:url(../img/fondo_3.png);
+	border:1px;
+	border-bottom-color:#CCC;
+	border-bottom-style:inset;
+	z-index:101;
+
+}
+#arriba_bus{
+	top: 8px;
+	left: 385px;
+	position: absolute;
+}
+
+#arriba_izq {
+	top: 12px;
+	left: -20px;
+	position: absolute;
+	margin-bottom: 0;
+	width: 249px;
+	padding-top: 0px;
+	height: 50px;
+	text-align:end;
+}
+
+#arriba_dre {
+	top: 3px;
+	left: 68%;
+	position: absolute;
+	margin-bottom: 0;
+	width: 15%;
+	padding-top: 0px;
+	padding-left:8px;
+	height: 50px;
+	
+}
+
+#body2{
+	top:45px;
+	left: 15%;
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	background:#FFFFFF;
+	border:1px;
+	border-bottom-style:none;
+    box-shadow: 1px 0px 12px  #CCC;
+	z-index:3;
+}
+
+#body4{
+	top:45px;
+	left: 15%;
+	position: absolute;
+	width: 60%;
+	height: 100%;
+	z-index:10;
+}
+
+#fondo_fotos{
+	top:45px;
+	background-color:#DFE0E1;
+	left: 31%;
+	position:fixed !important;
+	width: 43%;
+	height: 100%;
+	z-index:9;
+	border: 1px solid #B6B7B8;
+	border-bottom-style:none;
+	border-top-style:none;
+}
+
+#menu_abajo
+{
+	text-align:center;
+	top: 94%;
+	padding-top:0px;
+	position: absolute;
+	position:fixed !important;
+	left: 15%;
+	width: 70%;
+	height:6%;
+    box-shadow: 1px 2px 12px #CCC;
+	z-index:101;
+	background-color:#F5F6F7;
+}
+
+#arriba_der {
+	top: 0px;
+	left: 75%;
+	position: absolute;
+	margin-bottom: 0;
+	width: 282px;
+	padding-top: 0px;
+	height: 85px;
+}
+
+#header{
+	background-image:url(../img/wikki_r1_c2.png);
+	top:0px;
+	left:1%;
+	position: absolute;
+	width: 98%;
+	padding-top: 0px;
+	height: 85px;
+}
+
+#header1{
+	top:0px;
+	left:1%;
+	position: absolute;
+	width: 98%;
+	padding-top: 0px;
+	height: 85px;
+	background-color:#FFFFFF;
+}
+
+#login{
+	position:absolute;
+	left:49%;
+	top:-67px;
+	width:300px;
+}
+
+#personajes{
+	position:absolute;
+	left:15%;
+	top:-75%;
+}
+
+
+#arriba_dre2 {
+	top: 45%;
+	left: 50%;
+	position: absolute;
+	margin-bottom: 0;
+	width: 332px;
+	height: 50px;
+}
+
+#header3{
+	top: 0px;
+	left: -2px;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-color: #E6E6E6;
+	z-index: 4;
+}
+
+#mark{
+	top:10%;
+	left:20%;
+	position: absolute;
+	width: 60%;
+	height: 40%;
+	background-color:#FFFFFF;
+	z-index:5;
+	border-top-left-radius:1.8em;
+	border-top-right-radius:1.8em;
+	border-bottom-style:none;
+}
+
+#marka{
+	top:51%;
+	left:20%;
+	position: absolute;
+	width: 60%;
+	height: 35%;
+	background-color:#E6E6E6;
+	z-index:6;
+	border-bottom-left-radius:1.8em;
+	border-bottom-right-radius:1.8em;
+	box-shadow: 0px 0px 5px 5px #D4D4D4;
+	border-top-style:none;
+}
+
+#marka2{
+	top:48%;
+	left:20%;
+	position: absolute;
+	width: 60%;
+	height: 14px;
+	background-color:#FFFFFF;
+	z-index:8;
+}
+
+#marka3{
+	top:50%;
+	left:20%;
+	position: absolute;
+	width: 60%;
+	height: 10px;
+	background-color:#DA121A;
+	z-index:9;
+}
+
+#arriba_izq2 {
+	top: 10%;
+	left: 0%;
+	position:absolute;
+	width: 100%;
+	height: 50px;
+	text-align:center;
+}
+
+#cosas {
+	top: 23%;
+	left: 20%;
+	margin-left:20px;
+	position:absolute;
+	width: 50%;
+	height: 50px;
+	z-index:10;
+}
+
+#subtitle {
+	top: 75%;
+	left: 20%;
+	position:absolute;
+	width: 60%;
+	height: 50px;
+	z-index:12;
+}
+
+
+#subtitle1 {
+	top: 90%;
+	left: 15%;
+	position:absolute;
+	width: 70%;
+	height: 50px;
+	z-index:12;
+}
+
+
+#caja_login{
+	top:27%;
+	left:50%;
+	position: absolute;
+	width: 20%;
+	height: 250px;
+	background-color:#078930;
+	z-index:11;
+	border-bottom-left-radius:0.8em;
+	border-bottom-right-radius:0.8em;
+	border-top-left-radius:0.8em;
+	border-top-right-radius:0.8em;
+}
+
+
+#body3{
+	top:50%;
+	left: 0%;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	z-index:5;
+	background:#FFFFFF;
+}
+
+#body_abajo1{
+	top:50px;
+	width:100%;
+	position: absolute;
+}
+
+
+#arriba_centro_der {
+	top: 0px;
+	left: 0;
+	position: absolute;
+	margin-bottom: 0;
+	width: 249px;
+	padding-top: 0px;
+	height: 85px;
+	text-align:end;
+}
+
+#fondo_logo {
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	width: 98%;
+	height: 130px;
+}
+
+#hola{
+	position:absolute;
+	left:430px;
+	top:5px;
+	width:40%;
+	height:20px;
+	padding-top: 4px;
+	color:#333;
+}
+
+#menu{
+	position:absolute;
+	padding-left:2px;
+	left:2%;
+	top:85px;
+	background-color:#FFFFFF;
+	width:97%;
+	background:url(../img/fondo_menu.png);
+	z-index:100;
+	height:39px;
+}
+
+#menu1{
+	position:absolute;
+	left:1%;
+	top:87px;
+	background-color:#FFFFFF;
+	width:205px;
+	background:url(../img/fondo_menu.png);
+	z-index:100;
+	height:35px;
+	text-align:center;
+}
+
+#menu2{
+	position:absolute;
+	left:1%;
+	top:87px;
+	background-color:#FFFFFF;
+	width:98%;
+	background:url(../img/fondo_menu.png);
+	z-index:100;
+	height:35px;
+	text-align:right;
+}
+
+
+#relleno
+{
+	position:absolute;
+	left:1%;
+	top:85px;
+	width:28px;
+	background:url(../img/fondo_menu.png);
+	height:39px;
+}
+
+#izquierda
+{
+	top: 127px;
+	left: 1%;
+	position: absolute;
+	width: 210px;
+	height:540px;
+	background-color:#73959F;
+}
+
+#bottom-line{
+	position:absolute;
+	left:225px;
+	width:66%;
+	top:640px;
+	height:27px;
+	background-color:#000;
+	overflow:auto;
+}
+
+#trabajo_derecha
+{
+	position:absolute;
+	left:82%;
+	width:17%;
+	top:87px;
+	height:580px;
+	background-color:#CCC;
+	overflow:auto;
+	text-align:center;
+}
+
+#menu_derecha
+{
+	position:relative;
+	left:4px;
+	width:200px;
+	top:0%;
+	height:200px;
+	background-color:#CCC;
+	text-align:center;
+}
+
+
+#area_trabajo2 {
+	position:absolute;
+	left:1%;
+	width:98%;
+	top:85px;
+	height:563px;
+	background-color:#ffffff;
+	overflow:auto;
+}
+
+
+#area_trabajo3 {
+	position:absolute;
+	left:1%;
+	width:98%;
+	top:120px;
+	height:543px;
+	background-color:#ffffff;
+	overflow:auto;
+}
+
+#noticias_1{
+	top: 5px;
+	position:relative;
+	height:35px;
+}
+
+#noticias_2{
+	top: 3px;
+	position:relative;
+	height:32px;
+	background:#FFFFFF;
+
+}
+
+#Avance{
+	position:relative;
+	height:80px;
+	width:97%;
+	left:4px;
+	text-align:center;
+	background:#000000;
+	font-family:"01 Digit";
+	font-size:24px;
+	font-weight:bold;
+	color:#F00;
+}
+
+
+#ultimo_1{
+	top: 0px;
+	position:relative;
+	height:25px;
+}
+
+#ultimo_2{
+	top: 0px;
+	position:relative;
+	height:502px;
+	width:200px;
+	background-color:#C0C0C0;
+	z-index:10;
+}
+
+
+#bienvenido
+{
+	background:url(../images/novartis_r2_c1_s1.gif);
+	height:31px;
+	padding-top:8px;
+	vertical-align:middle;
+}
+
+
+
+#scrollbar1 { 
+	left:10px;
+	width: 395px; 
+	height:390px;  	
+	color:#000000;
+	top:5px;
+ }
+#scrollbar1 .viewport { width: 385px; height: 390px; overflow: hidden; position: absolute; 	z-index:18; top: 5px;  }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 10px; top: 5px; padding: 0; margin: 0; z-index:20; }
+#scrollbar1 .scrollbar{ background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; top:5px; }
+#scrollbar1 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+
+
+#scrollbar2 { 
+	left:10px;
+	width: 200px; 
+	height:390px;  	
+	color:#000000;
+	top:5px;
+ }
+#scrollbar2 .viewport { width: 385px; height: 390px; overflow: hidden; position: absolute; 	z-index:18; top: 5px;  }
+#scrollbar2 .overview { list-style: none; position: absolute; left: 10px; top: 5px; padding: 0; margin: 0; z-index:20; }
+#scrollbar2 .scrollbar{ background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; top:5px; }
+#scrollbar2 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar2 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar2 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar2 .disable { display: none; }
+
+
+#scrollbar3 { left:10px; width: 99%;  height:357px; color:#000000; top:25px; }
+#scrollbar3 .viewport { width: 98%; height: 357px; overflow: hidden; position: absolute; 	z-index:18; top: 25px;  }
+#scrollbar3 .overview { list-style: none; position: absolute; left: 3px; top: 5px; padding: 0; margin: 0; z-index:20; }
+#scrollbar3 .scrollbar{ background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; top:5px; }
+#scrollbar3 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar3 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar3 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar3 .disable { display: none; }
+
+#scrollbar4 { left:10px; width: 99%;  height:457px; color:#000000; top:25px; }
+#scrollbar4 .viewport { width: 98%; height: 457px; overflow: hidden; position: absolute; 	z-index:18; top: 25px;  }
+#scrollbar4 .overview { list-style: none; position: absolute; left: 3px; top: 5px; padding: 0; margin: 0; z-index:20; }
+#scrollbar4 .scrollbar{ background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; top:5px; }
+#scrollbar4 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar4 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar4 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar4 .disable { display: none; }
+
+
+#scrollbar5 { left:10px; width: 99%;  height:507px; color:#000000; top:15px; }
+#scrollbar5 .viewport { width: 98%; height: 507px; overflow: hidden; position: absolute; 	z-index:18; top: 15px;  }
+#scrollbar5 .overview { list-style: none; position: absolute; left: 3px; top: 5px; padding: 0; margin: 0; z-index:20; }
+#scrollbar5 .scrollbar{ background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; top:5px; }
+#scrollbar5 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar5 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar5 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar5 .disable { display: none; }
+
+
+#sub_area1
+{
+	position:relative;
+	left:0;
+	top:0;
+	width:60%;	
+	background-color:#000033;	
+}
+
+#sub_area2
+{
+	position:absolute;
+	left:60%;
+	top:0;
+	width:40%;
+	background-color:#003333;	
+}

@@ -1,0 +1,437 @@
+div.tabArea {
+  font-size: 90%;
+  font-weight: bold;
+}
+
+div.tabMain {
+  background-color: #ffffff;
+  border-top:1px solid #000000;
+  padding: 1em;
+  position: relative;
+  z-index: 101;
+}
+
+#seleccion_empresa {
+	position:absolute;
+	left:332px;
+	width:73%;
+	top:90px;
+	height:545px;
+}
+
+a.tab {
+  background-color:#940205;
+  border: 1px solid #000000;
+  border-bottom-width: 0px;
+  padding: 2px 1em 2px 1em;
+  position: relative;
+  text-decoration: none;
+  top: -1px;
+  z-index: 100;
+}
+a.tab.activeTab {
+  z-index: 102;
+}
+
+a.tabactiveTab {
+  background-color:#5F5F5F;
+  color:#FFFFFF;
+  padding: 2px 1em 2px 1em;
+  position: relative;
+  text-decoration: none;
+  top: -1px;
+  z-index: 100;
+}
+
+
+a.tab, a.tab:visited {
+  color: #FFFFFF;
+}
+
+a.tab:hover {
+  background-color:#999999;
+  color: #ffffff;
+}
+
+a.tab.activeTab:hover, a.tab.activeTab:visited {
+  background-color: #c0c0c0;
+  color: #000000;
+}
+
+div.tabIframeWrapper {
+  width: 100%;
+  position:absolute;
+  height:90%;
+}
+
+iframe.tabContent {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  width: 100%;
+  height:50%;
+}
+
+#arriba_izq {
+	top: 0%;
+	right: 0%;
+	position: absolute;
+	margin-bottom: 0;
+	width: 12%;
+	padding-top: 0px;
+	height: 35px;
+	z-index:100;
+}
+#logo {
+	top: 35px;
+	left: 0%;
+	position: absolute;
+	width: 316px;
+	height: 63px;
+}
+#izquierda
+{
+	top: 100px;
+	left: 4px;
+	position: absolute;
+	width: 17%;
+	height: 550px;
+	background-color:#FFFFFF;
+}
+#alarmas_1{
+	
+	top: 3px;
+	position:relative;
+	width:274px;
+}
+
+#alarmas_2{
+	top: 4px;
+	position:relative;
+	height:170px;
+	background:#C0C0C0;
+
+}
+
+#convenciones{
+	top: 0px;
+	position:relative;
+	height:65px;
+	background-color:#C0C0C0;
+	text-align:left;
+}
+
+#ultimo_1{
+	top: 0px;
+	position:relative;
+	height:25px;
+}
+
+#ultimo_2{
+	top: 0px;
+	position:relative;
+	height:245px;
+}
+
+#bienvenido
+{
+	background-color:#B00737;
+	height:25px;
+	padding-top:5px;
+}
+
+#divdentroden {
+	position:absolute;
+	background-color:#CCC;	
+}
+
+#menu1
+{
+	background-color:#FFF;
+	width: 100%;
+	height: 30px;
+	top: 60px;
+	left: 335px;
+}
+
+#menu
+{
+	top: 100px;
+	left: 18%;
+	position: absolute;
+	width: 81%;
+	height: 20px;
+	background-image:url(../imagenes/menu.png);
+	padding-bottom:15px;
+	text-align:left;
+}
+
+
+#arriba_centro_der {
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	margin-bottom: 0;
+	width: 100%;
+	height: 27px;
+	background:url(../template/images-template/fondo_arriba.png);
+	padding-top: 8px;
+	text-align:end;
+}
+
+#scrollbar1 { 
+	left:2px;
+	width: 270px; 
+	height:170px;  	
+	color:#000000;
+ }
+#scrollbar1 .viewport { width: 265px; height: 165px; overflow: hidden; position: absolute; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar1 .scrollbar{ background: transparent url(../template/images-template/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track { background: transparent url(../template/images-template/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(../template/images-template/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(../template/images-template/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+
+
+#scrollbar2 { 
+	left:2px;
+	width: 270px; 
+	height:507px;  	
+	color:#000000;
+ }
+#scrollbar2 .viewport { width: 250px; height: 507px; overflow: hidden; position: absolute; }
+#scrollbar2 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar2 .scrollbar{ background: transparent url(../template/images-template/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar2 .track { background: transparent url(../template/images-template/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar2 .thumb { background: transparent url(../template/images-template/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar2 .thumb .end { background: transparent url(../template/images-template/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar2 .disable { display: none; }
+
+#seleccion_empresa {
+	position:absolute;
+	left:332px;
+	width:73%;
+	top:90px;
+	height:545px;
+}
+
+#map {
+	position:absolute;
+	left:8px;
+	width:99%;
+	top:28px;
+	height:97%;
+}
+
+#mess{
+	position:absolute;
+	left:8px;
+	width:85%;
+}
+
+#area_trabajo {
+	position:fixed;
+	left:17.5%;
+	width:82%;
+	top:133px;
+	height:97%;
+	background-color:#fff;
+	overflow:auto;
+}
+
+#area_trabajo21
+{
+	position:absolute;
+	left:0%;
+	width:100%;
+	top:90px;
+	height:85%;
+	overflow:auto;
+	background-color:#fff;
+	overflow:auto;
+}
+#area_trabajo_abajo {
+	position:absolute;
+	left:0px;
+	width:100%;
+	top:14px;
+	height:80%;
+	overflow:auto;
+	background-color:#fff;
+}
+
+#area_trabajo_abajo1 {
+	position:absolute;
+	left:0px;
+	width:100%;
+	top:14px;
+	height:80%;
+	overflow:auto;
+	background-color:#fff;
+}
+
+#area_trabajo_reps {
+	position:absolute;
+	left:0px;
+	width:100%;
+	top:0px;
+	height:97%;
+	overflow:auto;
+	background-color:#FFF;
+}
+
+div#proyec
+{
+	position:absolute;
+	font-family:Arial;
+	font-size:11px;
+	border:1px solid #808080;
+	background-color:#FFF;
+	text-align:left;
+	visibility:hidden;
+	width:350px;
+	right:52.5%;
+	top:105px;
+	height:200px;
+	overflow:auto;
+}
+
+div#proyec1
+{
+	position:absolute;
+	font-family:Arial;
+	font-size:11px;
+	border:1px solid #808080;
+	background-color:#FFF;
+	text-align:left;
+	visibility:hidden;
+	width:350px;
+	right:50.5%;
+	top:105px;
+	height:200px;
+	overflow:auto;
+}
+
+    .multiselect {
+        width: 422px;
+    }
+    .selectBox {
+        position: relative;
+    }
+    .selectBox select {
+        width: 422px;
+		height:38px;
+    }
+    .selectBox1 {
+        position: relative;
+    }
+    .selectBox1 select {
+        width: 300px;
+    }
+
+    .overSelect {
+        position: absolute;
+        width: 300px;
+        left: 0; right: 0; top: 0; bottom: 0;
+    }
+    #checkboxes {
+		width:300px;
+        display: none;
+        border: 1px #dadada solid;
+		background-color:#F8F8F8;
+		height:160px;
+		overflow:auto;
+		position:relative;
+    }
+    #mye1 {
+		width:300px;
+        display: none;
+        border: 1px #dadada solid;
+		background-color:#F8F8F8;
+		height:160px;
+		overflow:auto;
+		position:relative;
+    }
+    #indicadores1 {
+        display: none;
+        border: 1px #dadada solid;
+		background-color:#F8F8F8;
+		height:160px;
+		width:300px;
+		overflow:auto;
+		position:relative;
+    }
+    #parame2 {
+		width:300px;
+        display: none;
+        border: 1px #dadada solid;
+		background-color:#F8F8F8;
+		height:160px;
+		overflow:auto;
+		position:relative;
+    }
+
+
+div#mye
+{
+	position:absolute;
+	font-family:Arial;
+	font-size:11px;
+	border:1px solid #808080;
+	background-color:#FFF;
+	text-align:left;
+	visibility:hidden;
+	width:350px;
+	right:1%;
+	top:105px;
+	height:200px;
+	overflow:auto;
+}
+
+div#indicadores
+{
+	position:absolute;
+	font-family:Arial;
+	font-size:11px;
+	border:1px solid #808080;
+	background-color:#FFF;
+	text-align:left;
+	visibility:hidden;
+	width:350px;
+	right:52.5%;
+	top:130px;
+	height:200px;
+	overflow:auto;
+}
+
+div#parame
+{
+	position:absolute;
+	font-family:Arial;
+	font-size:11px;
+	border:1px solid #808080;
+	background-color:#FFF;
+	text-align:left;
+	visibility:hidden;
+	width:350px;
+	right:1%;
+	top:130px;
+	height:200px;
+	overflow:auto;
+}
+
+div#parame1
+{
+	position:absolute;
+	font-family:Arial;
+	font-size:11px;
+	border:1px solid #808080;
+	background-color:#FFF;
+	text-align:left;
+	visibility:hidden;
+	width:350px;
+	right:1%;
+	top:105px;
+	height:200px;
+	overflow:auto;
+}

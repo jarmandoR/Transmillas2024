@@ -1,0 +1,12 @@
+from ((((`duconsol_transmillas`.`clientes` join `duconsol_transmillas`.`clientesservicios` 
+on((`duconsol_transmillas`.`clientesservicios`.`cli_idclientes` = `duconsol_transmillas`.`clientes`.`idclientes`))) 
+join `duconsol_transmillas`.`rel_sercli`
+ on((`duconsol_transmillas`.`clientesservicios`.`idclientesdir` = `duconsol_transmillas`.`rel_sercli`.`ser_idclientes`)))
+ join `duconsol_transmillas`.`servicios` 
+ on((`duconsol_transmillas`.`rel_sercli`.`ser_idservicio` = `duconsol_transmillas`.`servicios`.`idservicios`))) 
+ join `duconsol_transmillas`.`ciudades` 
+ on((`duconsol_transmillas`.`servicios`.`ser_ciudadentrega` = `duconsol_transmillas`.`ciudades`.`idciudades`)))
+
+ SELECT * FROM clientesservicios inner join rel_sercli on idclientesdir=ser_idclientes inner join servicios on ser_idservicio=idservicios  where idservicios=40113
+
+

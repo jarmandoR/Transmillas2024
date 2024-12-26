@@ -1,0 +1,82 @@
+@page{
+   margin: 0;
+}
+*{
+  font-size: 18px;
+  font-family: "Tahoma", "Geneva", sans-serif;
+}
+ 
+td,
+th,
+tr,
+table {
+  border-top: 1px solid black;
+  border-collapse: collapse;
+}
+ 
+td.columna1,
+th.columna1 {
+  font-size: 18px;
+  font-family: "Tahoma", "Geneva", sans-serif;
+  width: 110px;
+  max-width: 110px;
+  text-align: left;
+  align-content: left;
+}
+ 
+td.columna2,
+th.columna2 {
+  width: 280px;
+  max-width: 280px;
+  word-break: break-all;
+  text-align: left;
+  align-content: left;
+}
+
+td.columna3,
+th.columna3 {
+  width: 500px;
+  max-width: 500px;
+  word-break: break-all;
+  text-align: center;
+  align-content: center;
+}
+td.columna4,
+th.columna4 {
+  font-size: 20px;
+  font-family: "Tahoma", "Geneva", sans-serif;
+  width: 450px;
+  max-width: 450px;
+  word-break: break-all;
+  text-align: left;
+  align-content: left;
+}
+td.columna5,
+th.columna5 {
+  font-size: 28px;
+  font-family: "Tahoma", "Geneva", sans-serif;
+  width: 280px;
+  max-width: 280px;
+  word-break: break-all;
+  text-align: left;
+  align-content: left;
+}
+
+.centrado {
+   text-align: center;
+  align-content: center;
+}
+ 
+.ticket {
+  width: 550px;
+  max-width: 550px;
+}
+ 
+img {
+  max-width:  550px;
+  width: 550px;
+  height: 100px;
+}
+
+
+

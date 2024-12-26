@@ -1,0 +1,50 @@
+AR19450	AR19450	Paquete Pequeño	PAQUETE-ARCHIVO	GLOBO PETROl MIRNA LOMONACO DE MESA	BOGOTA	
+AR19451	AR19451	Paquete Pequeño	PAQUETE-ARCHIVO	NICOLE ACERO	BOGOTA	
+AR19452	AR19452	Paquete Pequeño	CUADRO EN VIDRIO	ANGIE P. VELANDIA	BOGOTA	
+AR19453	AR19453	Paquete Pequeño	PAQUETE-ARCHIVO	JUANITA MAÑUNGA	BOGOTA	
+AR19455	AR19455	Paquete Pequeño	PAQUETE-ARCHIVO	MANUEL ANDRES MANOSALVA	BOGOTA	
+AR19457	AR19457	Paquete Pequeño	PAQUETE-ARCHIVO	CARLOS JULIO MORALES P.	BOGOTA	
+AR19458	AR19458	Paquete Pequeño	PAQUETE-ARCHIVO	RUBIELA DE CHAVEZ	BOGOTA	
+AR19459	AR19459	Paquete Pequeño	PAQUETE-ARCHIVO	ROSMIRA ESPARZA	BUCARAMANGA	
+
+AR19450 1
+
+AR19451 1
+<div style="float:left;">
+    <table>
+      <tr><td>primera tablaaaaaaaaaa</td></tr>
+      <tr><td>de dos renglonesssssssss</td></tr>
+    </table>
+</div>
+<div style="float:left;">
+    <table>
+      <tr><td>segunda tablaaaaaaaaaa</td></tr>
+      <tr><td>esta abajoooooooooo</td></tr>
+    </table>
+</div> 
+
+<div style="float:left;">
+    <table>
+      <tr><td>primera tablaaaaaaaaaa</td></tr>
+      <tr><td>de dos renglonesssssssss</td></tr>
+    </table>
+</div>
+<div style="float:left; position:absolute; left:200px;">
+    <table>
+      <tr><td>segunda tablaaaaaaaaaa</td></tr>
+      <tr><td>esta abajoooooooooo</td></tr>
+    </table>
+</div> 
+
+INSERT INTO cp_proceso (cp, tipo, usuario, fecha) VALUES ('145004',6,'invytec',now());
+INSERT INTO cp_proceso (cp, tipo, usuario, fecha) VALUES ('145126',6,'invytec',now());
+INSERT INTO cp_proceso (cp, tipo, usuario, fecha) VALUES ('352544073999865',6,'invytec',now());
+INSERT INTO cp_proceso (cp, tipo, usuario, fecha) VALUES ('145061',6,'invytec',now());
+INSERT INTO cp_proceso (cp, tipo, usuario, fecha) VALUES ('357424100079384',6,'invytec',now());
+
+
+145004
+145126
+352544073999865
+145061
+551018

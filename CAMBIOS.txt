@@ -1,0 +1,43 @@
+DEJAR CAMPO SALUD OCUPACIONAL PARIDAD Y COLOCAR COAMPOS APARTE.***
+COLOCAR NO OBLIGATORIO ***
+IMPRESIONN DIAGNOSTICA OBLIGATIRIO Y APTITYD***
+ DEJAR ESPACIOS DE CABECERA Y PIE DE PAGINA EN PDF***
+ CAMBIAR ESTADO POR hISTORIA EN MENU. ***
+COLOCAR NOMBRES EN PDF.***
+ AUDIOMERTIA OPTOMETRIA  LABORATORIOS ESPIROMETRIA OTROS  CON CAMPO DE SELECION NORMAL 
+ Y ANORMAL REMPLAZAR POR RESULTADOS PARACLINICOS. IMIGRAR AL OTRO CERTIFICADO. ***
+ RESULTADOS EXAMENES NIGRAR LOS PARACLINICOS.***
+ RECOMENDACIONES NO PASAN AL OTRO CERTIFICADO.***
+
+ RECOMENDACIONES EN PDF.****
+susanacasta2014@hotmail.com
+//
+ COLOCAR BOTON DE CERRAR EN AGRGAR.
+
+ FACTURACION obligatorios
+ TELEFONO 
+ FECHA DE NACIMIENTO.
+ BARRIO
+ 
+ GUARDAR POR EL NUMERO DE FACTURA EN EL MENU.
+ CAMBIANDO EL NUMERO DE LA FACTURA.
+ NO GUARDA TODA LA FACTURA.+++++++++++
+ AGREGAR TODOS LOS SERVICIOS DE EXCEL****
+ QUITAR EL SON.***
+ MOSTRAR EL SALDO ANTES DE IMPRIMIR.***
+ 
+ 
+ MATRIZ
+ 
+ DEJAR CAMPO DE OBSERVACIONES A TODOS.
+ INMUNOLOGIA SON CUATRO EXAMENES.
+ 
+ 	if($rw2[0]!=""){$rw2[0]="<img src='$rw2[0]' width=400px; height='80px' >"; } else {  $rw2[0]=""; }
+		if($rw3[0]!=""){$rw3[0]="<img src='$rw2[0]' width=400px; height='80px' >"; } else {  $rw3[0]=""; }
+		
+		$html.="<table border=1 width='100%'  ><tr bgcolor='#89149E'   ><td colspan='3'  align='center' ></td></tr>";	
+		$html.="<tr class='text' bgcolor='#FFFFFF' onmouseover='this.style.backgroundColor=\"#C8C6F9\"' onmouseout='this.style.backgroundColor=\"#FFFFFF\"'>";
+		$html.="<td>$rw2[0]</td><td></td><td> $rw3[0]</td><tr>";
+		$html.="<tr bgcolor='#89149E' class='tittle3' style='color:#FFFFFF'  ><td style='color:#FFFFFF'>FIRMA DEL MEDICO</td><td style='color:#FFFFFF' >FIRMA Y CEDULA DEL ASPIRANTE</td><td style='color:#FFFFFF' >HUELLA INDICE</td>";
+		$html.="</table>";
+ 

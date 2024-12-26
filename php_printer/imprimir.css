@@ -1,0 +1,43 @@
+*{
+  font-size: 12px;
+  font-family: 'Times New Roman';
+}
+ 
+td,
+th,
+tr,
+table {
+  border-top: 1px solid black;
+  border-collapse: collapse;
+}
+ 
+td.columna1,
+th.columna1 {
+  width: 60px;
+  max-width: 60px;
+}
+ 
+td.columna2,
+th.columna2 {
+  width: 95px;
+  max-width: 95px;
+  word-break: break-all;
+}
+ 
+.centrado {
+ 	
+  text-align: center;
+  align-content: center;
+  border-top: 1px solid black;
+}
+ 
+.ticket {
+  width: 155px;
+  max-width: 155px;
+}
+ 
+img {
+  max-width: inherit;
+  width: inherit;
+}
+
