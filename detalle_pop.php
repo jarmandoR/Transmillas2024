@@ -4554,7 +4554,7 @@ echo"</tr>";
     <option value="17">Transmillas pasó a entregar tu servicio BGT0001 pero no fue posible  viene para pagar no dejaron el dinero💵.</option>
     <option value="18">Transmillas pasó a entregar tu servicio BGT0001 pero no sé encuentra nadie en dirección de programa la entrega pará el día de mañana.</option>
     <option value="19">Transmillas no entregó tu servicio BGT0001 por qué la dirección no existe por favor comunícate con nosotros.</option>
-    
+    <option value="21">Transmillas recuerda que debes pasar por tu encomienda antes del ⏰31 ya que no se prestara servicio desde el dia 31 hasta el dia 7 .</option>
     </select>
     </td></td>';
    
