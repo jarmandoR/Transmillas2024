@@ -448,56 +448,49 @@ include("footer.php");
 		alert('Todos las alertas han sido enviadas');
 	}
 
-async function enviarAlertaWhat(numguia, telefono, tipo, idservi) {
+	async function enviarAlertaWhat(numguia, telefono, tipo, idservi) {
+    // URL de la API
+    const url = "https://www.transmillas.com/ChatbotTransmillas/alertas.php";
 
-	if (cleanedVariable.length === 10) {
-    // console.log("La variable tiene exactamente 10 números.");
+    // Datos a enviar en la solicitud
+    const data = {
+        numero_guia: numguia, // Número de guía
+        telefono: telefono,    // Número de teléfono
+        tipo_alerta: tipo,     // Tipo de alerta
+        id_guia: idservi       // ID de la guía
+    };
 
-		// URL de la API
-		const url = "https://www.transmillas.com/ChatbotTransmillas/alertas.php";
+    try {
+        // Realizar la solicitud POST con fetch
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer MiSuperToken123" // Si la API requiere autenticación
+            },
+            body: JSON.stringify(data) // Convertir los datos a JSON
+        });
 
-		// Datos a enviar en la solicitud
-		const data = {
-			numero_guia: numguia, // Número de guía
-			telefono: telefono,    // Número de teléfono
-			tipo_alerta: tipo,     // Tipo de alerta
-			id_guia: idservi       // ID de la guía
-		};
+        // Verificar si la respuesta fue exitosa
+        if (!response.ok) {
+            throw new Error(`Error en la solicitud: ${response.statusText}`);
+        }
 
-		try {
-			// Realizar la solicitud POST con fetch
-			const response = await fetch(url, {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-					"Authorization": "Bearer MiSuperToken123" // Si la API requiere autenticación
-				},
-				body: JSON.stringify(data) // Convertir los datos a JSON
-			});
-
-			// Verificar si la respuesta fue exitosa
-			if (!response.ok) {
-				throw new Error(`Error en la solicitud: ${response.statusText}`);
-			}
-
-			// Decodificar la respuesta
-			const responseData = await response.json();
-			
-			// Mostrar la respuesta
-			console.log("Respuesta de la API:", responseData);
-				// Muestra solo el mensaje de éxito (o el campo específico que necesites)
-				// if (responseData.message) {
-				// 	alert(responseData.message); // Muestra solo el mensaje
-				// } else {
-				// 	alert("Operación realizada con éxito");
-				// }
-		} catch (error) {
-			// Manejar errores
-			console.error("Error en la solicitud:", error);
-		}
-	} else {
-		console.log("La variable no cumple con el formato.");
-	}
+        // Decodificar la respuesta
+        const responseData = await response.json();
+        
+        // Mostrar la respuesta
+        console.log("Respuesta de la API:", responseData);
+		    // Muestra solo el mensaje de éxito (o el campo específico que necesites)
+			// if (responseData.message) {
+			// 	alert(responseData.message); // Muestra solo el mensaje
+			// } else {
+			// 	alert("Operación realizada con éxito");
+			// }
+    } catch (error) {
+        // Manejar errores
+        console.error("Error en la solicitud:", error);
+    }
 }
 
 
