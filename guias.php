@@ -381,7 +381,7 @@ $DB->Execute($sql); $va=0;
 		echo "<td align='center'>";
 		echo "<a  onclick='pop_dis11($id_p,\"Editar datos\",\"guias.php\",\"recogerok.php\",0)';  style='cursor: pointer;' title='Editardatos' ><img src='img/informacion.jpg'></a></td>";
 		$colortd="";
-		$sql5="SELECT count(*) FROM `registro` WHERE mensaje_enviado in('7','8') and `id_servicio`='$id_p' ";
+		$sql5="SELECT count(*) FROM `registro` WHERE mensaje_enviado in('7','8','17','18','19','21') and `id_servicio`='$id_p' ";
 		$DB1->Execute($sql5);
 		$canti=$DB1->recogedato(0);
 		
