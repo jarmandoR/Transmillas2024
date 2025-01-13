@@ -69,7 +69,9 @@ if($param32!='' and $param32!=0){ $conde1="and `seg_motivo`= '$param33' ";  }
 
 
 $conde3=""; 
-$ano=date('Y');
+// $ano=date('Y');
+$ano=$param39;
+
 if($param34!=''){ $fechaactual=$param34." 00:00:00";  }
 if($param36!=''){ $fechafinal=$param36." 23:59:59";  }
 
@@ -1297,9 +1299,11 @@ if ($activoEnNomina) {
 			$valorPermisosLicPension=0;
 			$permisoLicencia="SELECT `seg_motivo`, `seg_descr`, `mot_salud`, `mot_pension`, `mot_auxtransporte`, `mot_porcbasico`, `mot_otrosDevengos`  FROM `seguimiento_user` INNER JOIN motivo_ingreso on mot_nombre=seg_motivo  where seg_motivo in('licencia de maternidad','LICENCIA POR LUTO','PERMISO NO REMUNERADO','PAGO DE INCAPACIDAD AL 66') and seg_fechaingreso>='$fechaAhora' and seg_fechaingreso<='$fechafin'  and seg_idusuario='$idusuario' "; 
 			$DB1->Execute($permisoLicencia); 
-			;
+			
+			$con=0;
 			while($rw9=mysqli_fetch_row($DB1->Consulta_ID))
 			{
+				
 				if(empty($rw9)){
 
 					$permisosLic=0;
@@ -1327,31 +1331,24 @@ if ($activoEnNomina) {
 						
 						
 
-						// if(strpos($rw9[5], ".") !== false) {
-				
-							// $partes = explode(".", $rw9[5]);
-							// $numeroAntesDelPunto1 = $partes[0];
-							// $numeroDespuesDelPunto1 = $partes[1];
-							
-							// // echo"Antes$numeroAntesDelPunto1*$diasvalorporcentaje";
-							// // echo"Despues$diasvalorporcentaje*$numeroDespuesDelPunto1";
-
-							// $diasPerLicBasValor=$numeroAntesDelPunto1*$diasvalorporcentaje;
-							// $valorMitaddiasPerLic=$diasvalorporcentaje*$numeroDespuesDelPunto1;
-			
-							// $diasPerLicBasValortotal=$diasPerLicBasValor+$valorMitaddiasPerLic;
-							// // echo"Total dia $diasPerLicBasValortotal=$diasPerLicBasValor+$valorMitaddiasPerLic";
-
-							// $diasvalorporcentaje=$diasvalor*0.;
-						// } else {
+	
 							$rw9[5];
 							$valorporcentaje=($rw9[5]/100)*$diasvalor;
 							
-							// $diasPerLicBasValor=$rw6[0]*$diasvalorporcentaje;
-							// $diasPerLicBasValortotal=$diasPerLicBasValor;
-							
-						// }	
-						$diasPerLicBasValortotalfinal=$diasPerLicBasValortotalfinal+$valorporcentaje;
+	
+						if ($rw9[0]=="PAGO DE INCAPACIDAD AL 66 ") {
+							// echo"si es";
+							if ($con==2) {
+								$diasPerLicBasValortotalfinal=$diasPerLicBasValortotalfinal;
+							}else {
+								$diasPerLicBasValortotalfinal=$diasPerLicBasValortotalfinal+$valorporcentaje;
+
+							}
+						}else {
+							// echo"no es";
+							$diasPerLicBasValortotalfinal=$diasPerLicBasValortotalfinal+$valorporcentaje;
+
+						}
 
 						
 					}
@@ -1359,15 +1356,14 @@ if ($activoEnNomina) {
 					
 				}
 
+				$con=$con+1;
 
 			}
 
 
-			// echo$valorPermisosLicSalud;
-			// echo$valorPermisosLicPension;
 
-			// $valorPermisosLicBasico=$diasvalor*$diasPerLicBas;
 
+			
 			$diasPerLicBasValortotalfinal_formateado = number_format($diasPerLicBasValortotalfinal, 0, ',', '.');			
 
 //Incapacidades		

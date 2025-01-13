@@ -90,24 +90,43 @@ $mes=date('m');
 $dia=date('d');
 if($dia>=5 and $dia<=20){
 	$mes=date('m');
+	$añoA=date('Y');
 $quincena1='Primera';
 }elseif($dia<=5){
+	
 	$mes=date('m');
+	if ($mes==01) {
+		$añoA=date('Y', strtotime('-1 year', strtotime($fechacompleta)));
+
+	}
 	$mes = date('m', strtotime('-1 month', strtotime($fechacompleta)));
+
 	$quincena1='Segunda';
 }else{
+	$añoA=date('Y');
 	$mes=date('m');
 	// echo$mes = date('m', strtotime('-1 month', strtotime($fechacompleta)));
 	$quincena1='Segunda';
 }
-$FB->llena_texto("Mes:", 34, 82, $DB, $mesd, "", "$mes", 1, 0);
-$FB->llena_texto("Quincena", 36, 82, $DB, $quincena, "", "$quincena1", 4, 0);
+$startYear = 2024; // Año inicial
+$currentYear = 2030; // Año actual
+for ($year = $startYear; $year <= $currentYear; $year++){
+	
+	$años["$year"]="$year";
+	
+	
+}
 
-$FB->llena_texto("Sede :",35,2,$DB,"(SELECT `idsedes`,`sed_nombre` FROM sedes where idsedes>0 and sed_principal='si' $conde2  order by sed_nombre asc  )", "cambio_ajax2(this.value, 16, \"llega_sub1\", \"param33\", 1, 0)", "$param35",1, 0);
-$FB->llena_texto("Operario:", 33, 444, $DB, "llega_sub1", "", "",4,0);
+$FB->llena_texto("A&ntildeo:", 39, 82, $DB, $años, "", "$añoA", 1, 0);
+$FB->llena_texto("Mes:", 34, 82, $DB, $mesd, "", "$mes", 4, 0);
+$FB->llena_texto("Quincena", 36, 82, $DB, $quincena, "", "$quincena1", 1, 0);
+
+$FB->llena_texto("Sede :",35,2,$DB,"(SELECT `idsedes`,`sed_nombre` FROM sedes where idsedes>0 and sed_principal='si' $conde2  order by sed_nombre asc  )", "cambio_ajax2(this.value, 16, \"llega_sub1\", \"param33\", 1, 0)", "$param35",4, 0);
+$FB->llena_texto("Operario:", 33, 444, $DB, "llega_sub1", "", "",1,0);
 // $FB->llena_texto("Motivo Ingreso:", 32, 82, $DB, $motivoingreso, "", "", 1, 0);
-$FB->llena_texto("", 37, 277, $DB, "", "", "llena_datos(0, $nivel_acceso, \"id_nombre\", \"ASC\");",1,0);
 $FB->llena_texto("Tipo de Contrato:",37,82, $DB, $tipocontrato, "", "", 4, 0);
+
+$FB->llena_texto("", 37, 277, $DB, "", "", "llena_datos(0, $nivel_acceso, \"id_nombre\", \"ASC\");",1,0);
 echo "<tr><td colspan='4'>
 
 <div  class='container'>
@@ -199,6 +218,8 @@ function llena_datos(ex, nivel, ordby, asc)
 	p5=document.getElementById('param35').value;
 	p6=document.getElementById('param36').value;
 	p7=document.getElementById('param37').value;
+	p9=document.getElementById('param39').value;
+
 	//p7=document.getElementById('param37').value;
 	var pagina=0; 
 	if(ordby=="undefined"){ ordby=""; }
@@ -208,7 +229,7 @@ function llena_datos(ex, nivel, ordby, asc)
 		location.href=destino;
 	}
 	else {
-		destino="detalle_nomina.php?param31="+p1+"&param33="+p3+"&param34="+p4+"&param35="+p5+"&param36="+p6+"&param37="+p7+"&pagina="+pagina+"&ordby="+ordby+"&asc="+asc;
+		destino="detalle_nomina.php?param31="+p1+"&param33="+p3+"&param34="+p4+"&param35="+p5+"&param36="+p6+"&param37="+p7+"&pagina="+pagina+"&ordby="+ordby+"&asc="+asc+"&param39="+p9;
 		MostrarConsulta4(destino, "destino_vesr")
 	}
 	clearTimeout(timer2);
