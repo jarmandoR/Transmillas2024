@@ -263,6 +263,7 @@ if ($rw[45]=="si") {
 	echo "<tr><td>Foto Pagare</td>".$LT->llenadocsimagen($DB1, "hojadevida",$id_p, 5, 35, 'Ver');
 	echo "<td>Foto  Funciones</td>".$LT->llenadocsimagen($DB1, "hojadevida",$id_p, 10, 35, 'Ver')."</tr>";
 	$FB->llena_texto("Fecha Inicio:",40, 10, $DB, "", "", "$rw[29]", 1, 1);
+	$FB->llena_texto("Fecha Inicio año actual:",100, 10, $DB, "", "", "$rw[29]", 1, 0);
 	$FB->llena_texto("Salario:",42, 118, $DB, "", "", "$cargosaldo[2]", 4, 2);
 	$FB->llena_texto("AUXILIO:",42, 118, $DB, "", "", "$cargosaldo[3]", 17, 2);
 	$FB->llena_texto("INGRESOS NO CONSTITUYENTES:",42, 118, $DB, "", "", "$cargosaldo[4]", 4, 2);

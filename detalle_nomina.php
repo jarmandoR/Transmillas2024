@@ -903,7 +903,7 @@ $conde0="and(hoj_fechatermino IS NULL OR hoj_fechatermino = '' OR ('$fechaactual
 if($param36=='Completo') {
 	$conde0="";
 }
-$sql="SELECT `idhojadevida`,  `hoj_nombre`, `hoj_apellido`,hoj_cargo, `hoj_tipocontrato`,`hoj_cedula`,`hoj_fechaingreso`, `sed_nombre`,`hoj_fechanacimiento`, `hoj_cedula`,`hoj_direccion`, `hoj_celular`, `hoj_estado`,hoj_sede,hoj_fechatermino,hoj_cuen,hoj_tcuenta,hoj_firma,hoj_estado FROM hojadevida
+$sql="SELECT `idhojadevida`,  `hoj_nombre`, `hoj_apellido`,hoj_cargo, `hoj_tipocontrato`,`hoj_cedula`,`hoj_fechaingreso`, `sed_nombre`,`hoj_fechanacimiento`, `hoj_cedula`,`hoj_direccion`, `hoj_celular`, `hoj_estado`,hoj_sede,hoj_fechatermino,hoj_cuen,hoj_tcuenta,hoj_firma,hoj_estado,hoj_fech_año_act FROM hojadevida
 INNER JOIN sedes ON hoj_sede = idsedes
 WHERE idhojadevida > 0  $conde0 $conde5 $conde4 $conde
 ORDER BY hoj_nombre ASC";
@@ -1480,20 +1480,27 @@ if ($activoEnNomina) {
 	
 //SALUD Y PENSION
 
-			$Salud=26000;
-			$Pension=26000;
+			$Salud=28470;
+			$Pension=28470;
 
-			$saludPorDia=26000/15;
-			$pensionPorDia=26000/15;
+			$saludPorDia=28470/15;
+			$pensionPorDia=28470/15;
 
 			if ($terminaContrato=="" and $mesdeingreso==false) {
-				if($param36=='Completo'){
+				// if($param36=='Completo'){
 
-					$valorSalud=$saludPorDia*30;	
-					$valorPension=$pensionPorDia*30;
-				}elseif($param36=='Primera' or $param36=='Segunda'){
-					$valorSalud=$saludPorDia*15;	
-					$valorPension=$pensionPorDia*15;
+				// 	$valorSalud=$saludPorDia*30;	
+				// 	$valorPension=$pensionPorDia*30;
+				// }elseif($param36=='Primera' or $param36=='Segunda'){
+				// 	$valorSalud=$saludPorDia*15;	
+				// 	$valorPension=$pensionPorDia*15;
+				// }
+				if ($diasVacaciones>0) {
+					$valorSalud=$saludPorDia*($diassitrabajoParaSumar+$diasVacaciones+$valorPermisosLicSalud+$diasincapacidad);	
+					$valorPension=$pensionPorDia*($diassitrabajoParaSumar+$diasVacaciones+$valorPermisosLicPension+$diasincapacidad);
+				}else {
+					$valorSalud=$saludPorDia*($diassitrabajoParaSumar+$valorPermisosLicSalud+$diasincapacidad+$diasnotrabajo);	
+					$valorPension=$pensionPorDia*($diassitrabajoParaSumar+$valorPermisosLicPension+$diasincapacidad+$diasnotrabajo);
 				}
 
 			}else{
