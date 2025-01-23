@@ -1399,6 +1399,12 @@ if ($activoEnNomina) {
 			}
 
 
+
+			//dias vacaBasicos
+			$diasVacaBasic="SELECT count(*) FROM `seguimiento_user`  where seg_motivo ='Festivo en vacaciones' and seg_fechaingreso>='$fechaAhora' and seg_fechaingreso<='$fechafin'  and seg_idusuario='$idusuario' "; 
+			$DB1->Execute($diasVacaBasic); 
+			$rw11=mysqli_fetch_row($DB1->Consulta_ID);
+			$valorDiasBasico=$rw11[0]*$cargosaldo[2];
 //inac X porcentaje 
 			// $incaoacidadporce=0;
 			// $nombreMotivo="";
@@ -1538,13 +1544,13 @@ if ($activoEnNomina) {
 				$partes = explode(".", $rw6[0]);
 				$numeroAntesDelPunto = $partes[0];
 
-				$valorHorasDomini=$numeroAntesDelPunto*9681;
-				$valorMitadDomini=9681/2;
+				$valorHorasDomini=$numeroAntesDelPunto*10831;
+				$valorMitadDomini=10831/2;
 
 				$valorTotalHorasDomini=$valorHorasDomini+$valorMitadDomini;
 			} else {
 				
-				$valorHorasDomini=$rw6[0]*9681;
+				$valorHorasDomini=$rw6[0]*10831;
 				$valorTotalHorasDomini=$valorHorasDomini;
 				
 			}	

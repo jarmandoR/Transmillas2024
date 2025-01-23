@@ -209,7 +209,7 @@ $motivoingreso['IngresoHoras']='Ingreso por horas';
 $motivoingreso['descanso no remunerado']='Descanso no remunerado';
 $motivoingreso['dia con sancion']='Dia de sancion Ps';
 $motivoingreso['Reposicion por falla']='Reposicion por falla';
-
+$motivoingreso['Festivo en vacaciones']='Festivo en vacaciones';
 
 //$motivoingreso['Positivo alcoholemia']='Positivo alcoholemia'; 
 

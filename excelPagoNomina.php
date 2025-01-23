@@ -1248,20 +1248,27 @@ function diasSegundaQuince($year, $month) {
                 
             //SALUD Y PENSION
             
-                        $Salud=26000;
-                        $Pension=26000;
+                        $Salud=28470;
+                        $Pension=28470;
             
-                        $saludPorDia=26000/15;
-                        $pensionPorDia=26000/15;
+                        $saludPorDia=28470/15;
+                        $pensionPorDia=28470/15;
             
                         if ($terminaContrato=="" and $mesdeingreso==false) {
-                            if($param36=='Completo'){
+                            // if($param36=='Completo'){
             
-                                $valorSalud=$saludPorDia*30;	
-                                $valorPension=$pensionPorDia*30;
-                            }elseif($param36=='Primera' or $param36=='Segunda'){
-                                $valorSalud=$saludPorDia*15;	
-                                $valorPension=$pensionPorDia*15;
+                            //     $valorSalud=$saludPorDia*30;	
+                            //     $valorPension=$pensionPorDia*30;
+                            // }elseif($param36=='Primera' or $param36=='Segunda'){
+                            //     $valorSalud=$saludPorDia*15;	
+                            //     $valorPension=$pensionPorDia*15;
+                            // }
+                            if ($diasVacaciones>0) {
+                                $valorSalud=$saludPorDia*($diassitrabajoParaSumar+$diasVacaciones+$valorPermisosLicSalud+$diasincapacidad);	
+                                $valorPension=$pensionPorDia*($diassitrabajoParaSumar+$diasVacaciones+$valorPermisosLicPension+$diasincapacidad);
+                            }else {
+                                $valorSalud=$saludPorDia*($diassitrabajoParaSumar+$valorPermisosLicSalud+$diasincapacidad+$diasnotrabajo);	
+                                $valorPension=$pensionPorDia*($diassitrabajoParaSumar+$valorPermisosLicPension+$diasincapacidad+$diasnotrabajo);
                             }
             
                         }else{
@@ -1299,13 +1306,13 @@ function diasSegundaQuince($year, $month) {
                             $partes = explode(".", $rw6[0]);
                             $numeroAntesDelPunto = $partes[0];
             
-                            $valorHorasDomini=$numeroAntesDelPunto*9681;
-                            $valorMitadDomini=9681/2;
+                            $valorHorasDomini=$numeroAntesDelPunto*10831;
+                            $valorMitadDomini=10831/2;
             
                             $valorTotalHorasDomini=$valorHorasDomini+$valorMitadDomini;
                         } else {
                             
-                            $valorHorasDomini=$rw6[0]*9681;
+                            $valorHorasDomini=$rw6[0]*10831;
                             $valorTotalHorasDomini=$valorHorasDomini;
                             
                         }	
