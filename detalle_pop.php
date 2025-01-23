@@ -3771,16 +3771,17 @@ else if ($tabla == "Editar datos") {
 
 
 
-    $slqs = "SELECT idimagenguias FROM imagenguias WHERE ima_nombre='$rw[6]' and ima_tipo='Recogida' ";
+    $slqs = "SELECT idimagenguias,ima_ruta,ima_tipo FROM imagenguias WHERE ima_idservicio=$id_param and ima_tipo='Recogida'  ";
     $DB1->Execute($slqs);
-    $idmagen = $DB1->recogedato(0);
+    $imgu=mysqli_fetch_row($DB1->Consulta_ID);
 
     $FB->llena_texto("PESO KG:", 1, 123, $DB, "", "$valor", $rw[0], 1, 1);
     $FB->llena_texto("VOLUMEN:", 4, 125, $DB, "", "$valor2", $rw[4], 1, 0);
     $FB->llena_texto("ESTADO PAQUETE:", 2, 9, $DB, "", "", $rw[5], 1, 0);
     $FB->llena_texto("# GUIA:", 6, 1, $DB, "", "", $rw[6], 1, 0);
-    $FB->llena_texto("FOTO GUIA", 10, 60, $DB, "", "", "$idmagen", 1, 0);
+    // $FB->llena_texto("FOTO GUIA", 10, 60, $DB, "", "", "$idmagen", 1, 0);
     $FB->llena_texto("VERIFICADO:", 3, 5, $DB, "", "", "", 1, 1);
+
 
     if ($rw[3] == 1 and $rw[2] == 0) {
         $clasificacion = 1;
@@ -3790,6 +3791,27 @@ else if ($tabla == "Editar datos") {
         $clasificacion = 0;
     }
 
+
+
+
+
+    $sqlimg="SELECT ser_img_recog,ser_img_entre from servicios where idservicios=$id_param ";
+    $DB1->Execute($sqlimg); 
+    $img=mysqli_fetch_row($DB1->Consulta_ID);
+    if ($img[0]!="") {
+    //  echo "<td align='center' >";
+    //  		echo "<a href='imgServicios/$img[0]' target='_blank'>Ver</td>";
+    }else {
+    // echo "<td align='center' >";
+    // echo "</td>";
+    }
+    echo'<div class="popup-content">
+    <h2>Galería de imágenes</h2>';
+    echo'<div class="thumbnail-container">
+    <img src="'.$imgu[1].'" alt="Miniatura 1" class="thumbnail" onclick="ampliarImagen(this)">
+    <img src="imgServicios/'.$img[0].'" alt="Miniatura 2" class="thumbnail" onclick="ampliarImagen(this)">
+    </div>';
+    echo"</div>";
     $FB->llena_texto("id_param", 1, 13, $DB, "", "", $id_param, 5, 0);
     $FB->llena_texto("id_param2", 1, 13, $DB, "", "", $id_param, 5, 0);
     $FB->llena_texto("clasificacion", 1, 13, $DB, "", "", $clasificacion, 5, 0);

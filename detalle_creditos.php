@@ -78,7 +78,7 @@ $DB->Execute($sql); $va=0;
 		<td>".$rw1[17]."</td>
 		";
 
-		$sqlrecogida="SELECT ima_ruta,ima_tipo,idimagenguias,ima_fecha from imagenguias where ima_tipo='Entrega' and  ima_idservicio=$id_p ";
+		echo$sqlrecogida="SELECT ima_ruta,ima_tipo,idimagenguias,ima_fecha from imagenguias where ima_tipo like '%Entrega%' and  ima_idservicio=$id_p ";
 		$DB1->Execute($sqlrecogida); 
 		$guiasi=mysqli_fetch_row($DB1->Consulta_ID);
 		$entrgasg=$guiasi[0];

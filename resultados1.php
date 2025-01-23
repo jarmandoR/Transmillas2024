@@ -290,6 +290,15 @@ else if($cond==12){
 		}else{
 			$FB->llena_texto("param30", 4, 13, $DB, "", "", "0", 5,2);
 		}
+		//Nuevo
+		$FB->titulo_azul1("Datos quien entrega",14,0, 5); 
+		// $FB->llena_texto("Foto:",87,6, $DB, "", "","", 1, 1);
+		echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param87' name='param87' require capture='environment'></td></tr>";
+		
+
+		$FB->llena_texto("Nombre:",82, 1, $DB, "", "", "", 1, 1);
+		// $FB->llena_texto("Documento:",83, 1, $DB, "", "","", 1, 0);
+		$FB->llena_texto("Telefono Whatsapp:",85, 1, $DB, "", "","", 1, 1);
 
 		$kiliostotal=$rw[8]+$rw[14];
 		$FB->llena_texto("param9", 4, 13, $DB, "", "", $rw[5], 5,2);
@@ -462,7 +471,14 @@ else if($cond==12){
 		}else{
 			$FB->llena_texto("param8", 4, 13, $DB, "", "", "2", 5, 0);
 		}
+		//Nuevo
+		$FB->titulo_azul1("Datos quien entrega",14,0, 5); 
+		// $FB->llena_texto("Foto:",87,6, $DB, "", "","", 1, 1);
+		echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param87' name='param87' require capture='environment'></td></tr>";
 
+		$FB->llena_texto("Nombre:",82, 1, $DB, "", "", "", 1, 1);
+		// $FB->llena_texto("Documento:",83, 1, $DB, "", "","", 1, 0);
+		$FB->llena_texto("Telefono Whatsapp:",85, 1, $DB, "", "","", 1, 1);
 	
 		$FB->llena_texto("param9", 4, 13, $DB, "", "", $rw[5], 5, 0);
 		$FB->cierra_tabla();

@@ -461,6 +461,13 @@ $FB->llena_texto("id_param2", 1, 13, $DB, "", "", "$rw[19]", 5, 0);  // clientes
 $FB->llena_texto("id_usuario", 1, 13, $DB, "", "", "$id_usuario", 5, 0);
 $FB->llena_texto("variableunica", 1, 13, $DB, "", "", "$variableunica", 5, 0);
 
+$FB->titulo_azul1("Datos quien recibe",14,0, 5); 
+// $FB->llena_texto("Foto :",87, 6, $DB, "", "","", 1, 1);
+echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param87' name='param87' required  capture='environment'></td></tr>";
+
+$FB->llena_texto("Nombre:",82, 1, $DB, "", "","", 1, 1);
+$FB->llena_texto("Telefono Whatsapp:",85, 1, $DB, "", "","", 1, 1);
+
 echo '<tr><td colspan=2 align="right" class="text"><div id="llega_sub3">';
 $FB->titulo_azul1("Valor",8,0,5);  
 $FB->llena_texto("",111, 118, $DB, "", "","0", 1, 0);

@@ -200,20 +200,29 @@ if($precio=='' or $precio==null){
 if($param27==''){
 	$param27=0;
 }
-
+if (is_uploaded_file($_FILES['param87']['tmp_name'])){
+	// $imagen1 = md5(date("Y-m-d-H-i-s").$param3).".jpg";
+	$nombreArchivo1 = $_FILES["param87"]["name"];
+	$foto = date("Y-m-d-H-i-s").$nombreArchivo1;
+   
+	move_uploaded_file($_FILES['param87']['tmp_name'], "./imgServicios/".$foto);
+ }else{
+	 $foto = "";
+	 
+ }
  if($nivel_acceso==3){ 
 	echo "aki 4";
 
 	$sql1="INSERT INTO `servicios` (`ser_iddocumento`,`ser_telefonocontacto`, `ser_destinatario`, `ser_direccioncontacto`,`ser_ciudadentrega`, `ser_tipopaquete`, `ser_paquetedescripcion`, `ser_fechaentrega`,`ser_prioridad`, 
-	`ser_guiare`, `ser_valorabono`, `ser_valorseguro`,  `ser_fecharegistro`,`ser_peso`,ser_volumen,ser_idverificado,ser_idresponsable,ser_valor,`ser_estado`,ser_visto,ser_consecutivo,ser_pendientecobrar,ser_fechafinal,ser_clasificacion,ser_idverificadopeso,ser_piezas,ser_descripcion,ser_verificado,ser_tipopaq,ser_idregistro,ser_devolverreci,ser_fechaasignacion) 
-   VALUES  ('$param7','$param8','$param9','$param10','$param11','$param12','$param13','$param14','$param15','$param16','$param17','$param18','$fechatiempo','$param26',$param27,$id_usuario,$id_usuario,$precio,$estado,0,'$planilla',$param112,'$fechatiempo','$param28',0,'$param29','$param31','$param32','$param33','$variableunica','$param25','$fechatiempo')";
+	`ser_guiare`, `ser_valorabono`, `ser_valorseguro`,  `ser_fecharegistro`,`ser_peso`,ser_volumen,ser_idverificado,ser_idresponsable,ser_valor,`ser_estado`,ser_visto,ser_consecutivo,ser_pendientecobrar,ser_fechafinal,ser_clasificacion,ser_idverificadopeso,ser_piezas,ser_descripcion,ser_verificado,ser_tipopaq,ser_idregistro,ser_devolverreci,ser_fechaasignacion,ser_img_recog) 
+   VALUES  ('$param7','$param8','$param9','$param10','$param11','$param12','$param13','$param14','$param15','$param16','$param17','$param18','$fechatiempo','$param26',$param27,$id_usuario,$id_usuario,$precio,$estado,0,'$planilla',$param112,'$fechatiempo','$param28',0,'$param29','$param31','$param32','$param33','$variableunica','$param25','$fechatiempo','$foto')";
    $idser=$DB->Executeid($sql1);
 
  }else {
 	echo "aki 5";
   $sql1="INSERT INTO `servicios` (`ser_iddocumento`,`ser_telefonocontacto`, `ser_destinatario`, `ser_direccioncontacto`,`ser_ciudadentrega`, `ser_tipopaquete`, `ser_paquetedescripcion`, `ser_fechaentrega`,`ser_prioridad`, 
-	`ser_guiare`, `ser_valorabono`, `ser_valorseguro`,  `ser_fecharegistro`,`ser_peso`,ser_volumen,ser_idverificado,ser_idresponsable,ser_valor,`ser_estado`,ser_visto,ser_consecutivo,ser_pendientecobrar,ser_fechafinal,ser_clasificacion,ser_idverificadopeso,ser_piezas,ser_descripcion,ser_verificado,ser_tipopaq,ser_idregistro,ser_devolverreci) 
-   VALUES  ('$param7','$param8','$param9','$param10','$param11','$param12','$param13','$param14','$param15','$param16','$param17','$param18','$fechatiempo','$param26',$param27,$id_usuario,$id_usuario,$precio,$estado,0,'$planilla',$param112,'$fechatiempo','$param28',0,'$param29','$param31','$param32','$param33','$variableunica','$param25')";
+	`ser_guiare`, `ser_valorabono`, `ser_valorseguro`,  `ser_fecharegistro`,`ser_peso`,ser_volumen,ser_idverificado,ser_idresponsable,ser_valor,`ser_estado`,ser_visto,ser_consecutivo,ser_pendientecobrar,ser_fechafinal,ser_clasificacion,ser_idverificadopeso,ser_piezas,ser_descripcion,ser_verificado,ser_tipopaq,ser_idregistro,ser_devolverreci,ser_img_recog) 
+   VALUES  ('$param7','$param8','$param9','$param10','$param11','$param12','$param13','$param14','$param15','$param16','$param17','$param18','$fechatiempo','$param26',$param27,$id_usuario,$id_usuario,$precio,$estado,0,'$planilla',$param112,'$fechatiempo','$param28',0,'$param29','$param31','$param32','$param33','$variableunica','$param25','$foto')";
    $idser=$DB->Executeid($sql1);
  }
  echo "aki 6";
@@ -277,13 +286,21 @@ if($param27==''){
 	$DB1->cerrarconsulta();
 	//$guia!=''
 
+	// if($nivel_acceso!=3){
+	// //header ("Location: inicio1.php?param15='$param15'");
+	// 	header ("Location: imprimirfactura.php?param15='reenviar'&id_param=$idser");
+	// } else {
+		
+	// 	$pagina2="configuracion.php?idmen=163";
+	// 	header ("Location: ticketfactura.php?pagina2=$pagina2&id_param=$idser");
+	// }
 	if($nivel_acceso!=3){
-	//header ("Location: inicio1.php?param15='$param15'");
-		header ("Location: imprimirfactura.php?param15='reenviar'&id_param=$idser");
+		$pagina2="imprimirfactura.php";
+		header ("Location: firmadigital.php?pagina2=$pagina2&param15='reenviar'&id_param=$idser&idfirma=$idfirma&idguia=$planilla&imprimir=Recogida&p=$tipopago");
 	} else {
 		
-		$pagina2="configuracion.php?idmen=163";
-		header ("Location: ticketfactura.php?pagina2=$pagina2&id_param=$idser");
+		$pagina2="configuracion.php";
+		header ("Location: firmadigital.php?pagina2=$pagina2&id_param=$idser&idfirma=$idfirma&idguia=$planilla&imprimir=Recogida&p=$tipopago");
 	}
 
  }else {

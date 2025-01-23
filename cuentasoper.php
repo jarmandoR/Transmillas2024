@@ -195,7 +195,7 @@ if($param2!=''){
 	$FB->titulo_azul1("TIPO",1,0,0);
 	echo "</tr>";
 	$fechaactual2=date("Y-m-d",strtotime($fechaactual."- 1 days"));
-   $sql="SELECT cue_numeroguia,'recogida' as estado FROM `cuentaspromotor` WHERE cue_idoperador='$param2' and cue_validado=0 and cue_estado<100 and  cue_fecharecogida<='$fechaactual2'
+$sql="SELECT cue_numeroguia,'recogida' as estado FROM `cuentaspromotor` WHERE cue_idoperador='$param2' and cue_validado=0 and cue_estado<100 and  cue_fecharecogida<='$fechaactual2'
  union
  SELECT cue_numeroguia,'Entrega' as estado FROM `cuentaspromotor` WHERE   cue_idoperentrega='$param2' and cue_validadoentrega=0 and cue_estado<100 and  cue_fecha<='$fechaactual2'
  ";
@@ -270,7 +270,7 @@ $va4=0;
 $va5=0;
 $va6=0;
  if($param2!=''){
-	 $sql="SELECT `idasignaciondinero`,`asi_fecha`,`asi_valor`,  `asi_idautoriza`, `asi_idpromotor` ,asi_tipo,asi_descripcion,asi_usercom,asi_valorcom, asi_idvalidaf as idvalida,'asignaciondinero' as tabla
+	$sql="SELECT `idasignaciondinero`,`asi_fecha`,`asi_valor`,  `asi_idautoriza`, `asi_idpromotor` ,asi_tipo,asi_descripcion,asi_usercom,asi_valorcom, asi_idvalidaf as idvalida,'asignaciondinero' as tabla
 	FROM `asignaciondinero` WHERE idasignaciondinero>0  $conde1 ORDER BY $conde, $ord $asc";
 	$DB1->Execute($sql);
 	$asignaciones=array();
@@ -762,9 +762,10 @@ if($rw2[20]==$fechaactual and $rw2[11]==$param2){  //recogida
 						}else{
 
 							$comprobados[] = "0";
-							$contfoto="<a href='https://sistema.transmillas.com/editarImg.php?img=".$fotorec."&guia=".$guiare."&idser=".$id_p."' target='_blank'>Ver✏️$confirma</a><br>-------<br><a href='del_admin.php?id_param=$guiasi[2]&tabla=Elimina Archivo2&ruta=$fotorec' title='Eliminar' 
-							onClick='return confirm(\"".utf8_encode("Est&aacute; seguro de eliminar este registro?")."\")'><i class='fa fa-trash-o'></i></a>";	
-				
+							// $contfoto="<a href='https://sistema.transmillas.com/editarImg.php?img=".$fotorec."&guia=".$guiare."&idser=".$id_p."' target='_blank'>Ver✏️$confirma</a><br>-------<br><a href='del_admin.php?id_param=$guiasi[2]&tabla=Elimina Archivo2&ruta=$fotorec' title='Eliminar' 
+							// onClick='return confirm(\"".utf8_encode("Est&aacute; seguro de eliminar este registro?")."\")'><i class='fa fa-trash-o'></i></a>";	
+							$contfoto="<a href='".$fotorec."' target='_blank'>Ver/a><br>-------<br><a href='del_admin.php?id_param=$guiasi[2]&tabla=Elimina Archivo2&ruta=$fotorec' title='Eliminar' 
+							onClick='return confirm(\"".utf8_encode("Est&aacute; seguro de eliminar este registro?")."\")'><i class='fa fa-trash-o'></i></a>";
 						}
 				}elseif ($cue_idoperentrega==$param2){
 
@@ -787,7 +788,7 @@ if($rw2[20]==$fechaactual and $rw2[11]==$param2){  //recogida
 							
 
 							    $comprobados[] = "0";
-								$contfoto="<a href='https://sistema.transmillas.com/editarImg.php?img=".$fotorec."&guia=".$guiare."&idser=".$id_p."' target='_blank'>Ver✏️ $confirma</a><br>-------<br><a href='del_admin.php?id_param=$guiasi[2]&tabla=Elimina Archivo2&ruta=$fotorec' title='Eliminar' 
+								$contfoto="<a href='".$fotorec."' target='_blank'>Ver</a><br>-------<br><a href='del_admin.php?id_param=$guiasi[2]&tabla=Elimina Archivo2&ruta=$fotorec' title='Eliminar' 
 								onClick='return confirm(\"".utf8_encode("Est&aacute; seguro de eliminar este registro?")."\")'><i class='fa fa-trash-o'></i></a>";	
 		
 							}

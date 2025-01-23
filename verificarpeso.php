@@ -61,8 +61,56 @@ function buscarsede(dato)
 	window.location=destino;
 	
 }
+let scale = 1; // Escala inicial de la imagen ampliada
+
+function ampliarImagen(element) {
+  const overlay = document.getElementById("image-overlay");
+  const imagenAmpliada = document.getElementById("ampliada");
+
+  // Configura la imagen ampliada
+  imagenAmpliada.src = element.src;
+  scale = 1; // Restablece el zoom al abrir la imagen
+  imagenAmpliada.style.transform = `scale(${scale})`;
+
+  // Muestra la vista ampliada
+  overlay.style.display = "flex";
+
+  // Agrega el evento de zoom con la rueda del mouse
+  imagenAmpliada.addEventListener("wheel", ajustarZoom);
+}
+
+function cerrarImagen() {
+  const overlay = document.getElementById("image-overlay");
+  const imagenAmpliada = document.getElementById("ampliada");
+
+  // Oculta la vista ampliada
+  overlay.style.display = "none";
+
+  // Elimina el evento de zoom
+  imagenAmpliada.removeEventListener("wheel", ajustarZoom);
+}
+
+function ajustarZoom(event) {
+  event.preventDefault();
+
+  // Ajusta la escala según la dirección de la rueda del mouse
+  if (event.deltaY < 0) {
+    scale += 0.1; // Acerca
+  } else {
+    scale -= 0.1; // Aleja
+  }
+
+  // Limita la escala a un rango razonable
+  scale = Math.max(0.5, Math.min(3, scale));
+
+  // Aplica la nueva escala
+  const imagenAmpliada = document.getElementById("ampliada");
+  imagenAmpliada.style.transform = `scale(${scale})`;
+}
 </script>
+
 <head>
+<link href="css/estilosImagenes.css" rel="stylesheet" type="text/css" />
 
 	</head>
 <body onload="cambio_ajax2(<?php echo $id_sedes;?>, 107, 'llega_sub1', 'param3', 1, <?php echo $id_sedes;?>); imprimirguia(<?php echo $id_param;?>);">
@@ -149,7 +197,6 @@ $FB->titulo_azul1("Pago	",1,0,0);
 $FB->titulo_azul1("# Guia",1,0,0); 
 $FB->titulo_azul1("Guia R",1,0,0); 
 $FB->titulo_azul1("Estado",1,0,0); 
-
 $FB->titulo_azul1("Pesar",1,0,0); 
 $FB->titulo_azul1("Codigo",1,0,0); 
 //$FB->titulo_azul1("Editar",1,0,0);
@@ -164,7 +211,7 @@ if($param2!="" and $param1!=""){
   
 if($param1==""){ $param1="ser_prioridad"; } 
 
-   $sql="SELECT `idservicios`,`cli_nombre`,`cli_direccion`,`ser_destinatario`,`ciu_nombre`,  `ser_direccioncontacto`, `ser_paquetedescripcion`, `ser_piezas`,`usu_nombre`,`ser_clasificacion`,`ser_consecutivo`,`ser_pendientecobrar`,cli_idciudad,ser_estado,ser_guiare,ser_fechafinal
+$sql="SELECT `idservicios`,`cli_nombre`,`cli_direccion`,`ser_destinatario`,`ciu_nombre`,  `ser_direccioncontacto`, `ser_paquetedescripcion`, `ser_piezas`,`usu_nombre`,`ser_clasificacion`,`ser_consecutivo`,`ser_pendientecobrar`,cli_idciudad,ser_estado,ser_guiare,ser_fechafinal
  FROM serviciosdia 
  inner join usuarios on idusuarios=ser_idresponsable  where   ser_idverificadopeso=0  $conde1 $conde $conde2 $conde3 ORDER BY idservicios,ser_fechafinal asc ";
 
@@ -203,6 +250,35 @@ $DB->Execute($sql); $va=0;
 		<td>".$estado."</td>
 		
 		";
+		$sqlrecogida="SELECT ima_ruta,ima_tipo,idimagenguias from imagenguias where ima_idservicio=$id_p ";
+					$DB1->Execute($sqlrecogida); 
+					while($guiasi=mysqli_fetch_row($DB1->Consulta_ID))
+					{
+
+						if($guiasi[1]=='Recogida'){
+							$recogidasg=$guiasi[0];
+							$idimagenre=$guiasi[2];
+						}elseif($guiasi[1]=='Entregar' or $guiasi[1]=='Entrega'){
+							$entrgasg=$guiasi[0];
+							$idimagenent=$guiasi[2];
+						}
+
+					}
+		// echo "<td align='center' >";
+		// echo "<a href='$recogidasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+		
+		$sqlimg="SELECT ser_img_recog,ser_img_entre from servicios where idservicios=$id_p ";
+		$DB1->Execute($sqlimg); 
+		$img=mysqli_fetch_row($DB1->Consulta_ID);
+		if ($img[0]!="") {
+			// echo "<td align='center' >";
+			// 		echo "<a href='imgServicios/$img[0]' target='_blank'>Ver</td>";
+		}else {
+			// echo "<td align='center' >";
+			// echo "</td>";
+		}
+
+
 		if($rw1[13]==11){
 				
 			echo "<td align='center' >";
@@ -299,7 +375,12 @@ echo "<tr class='text' bgcolor='$color' onmouseover='this.style.backgroundColor=
 	echo "</tr>"; 
 
 	} 
+?>
 
-
+	<div id="image-overlay" class="image-overlay">
+	<span class="close" onclick="cerrarImagen()">&times;</span>
+	<img id="ampliada" class="ampliada" src="" alt="Imagen ampliada">
+  	</div>
+<?php
 include("footer.php");
 ?>

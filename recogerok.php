@@ -17,6 +17,7 @@ if(isset($_REQUEST["dir"])) {$dir=$_REQUEST["dir"]; } else { $dir=""; }
  $cambios= $sqlcambio[0];
 
 if($param1=='RECOGIDO'){
+	$imprimir='Recogida';
 
 $kilos=$param10+$param20;
 if($param27!=''){
@@ -250,18 +251,37 @@ if($param25==''){
 		$sql5="INSERT INTO `pagoscuentas`(`pag_tipopago`,`pag_cuenta`, `pag_valor`, `pag_idoperario`, `pag_idservicio`,`pag_guia`, `pag_estado`, `pag_fecha`,`pag_img_transaccion`) VALUES ('$tipopago','$cuenta','$param11','$id_usuario','$id_param2','$planilla','$estadop','$fechatiempo','$img_transaccion')";
 		$DB1->Execute($sql5);
 	}
-
-	 $sql1="UPDATE `servicios` SET `ser_consecutivo`='$planilla',`ser_resolucion`='$rw1[2]',`ser_recogida`='$param1',  `ser_paquetedescripcion`='$param3', `ser_valorseguro`='$param6', `ser_horaentrega`='$param7', `ser_clasificacion`='$param8',`ser_fechafinal`='$fechatiempo',`ser_fechaasignacion`='$fechatiempo',`ser_estado`='4',ser_devolverreci='$param29',ser_tipopaq='$param21',ser_verificado='$param19',ser_volumen='$param20',ser_guiare='$param25',ser_descripcion='$param26',ser_idresponsable='$param18'  $cond1 $cond WHERE `idservicios`=$id_param2";
+// para guardar imagen del paquete o servicio
+	if (is_uploaded_file($_FILES['param87']['tmp_name'])){
+		// $imagen1 = md5(date("Y-m-d-H-i-s").$param3).".jpg";
+		$nombreArchivo1 = $_FILES["param87"]["name"];
+		$foto = date("Y-m-d-H-i-s").$nombreArchivo1;
+	   
+		move_uploaded_file($_FILES['param87']['tmp_name'], "./imgServicios/".$foto);
+	 }else{
+		 $foto = "";
+	 }
+// agregar campo a base de datos 
+	 $sql1="UPDATE `servicios` SET `ser_consecutivo`='$planilla',`ser_resolucion`='$rw1[2]',`ser_recogida`='$param1',  `ser_paquetedescripcion`='$param3', `ser_valorseguro`='$param6', `ser_horaentrega`='$param7', `ser_clasificacion`='$param8',`ser_fechafinal`='$fechatiempo',`ser_fechaasignacion`='$fechatiempo',`ser_estado`='4',ser_devolverreci='$param29',ser_tipopaq='$param21',ser_verificado='$param19',ser_volumen='$param20',ser_guiare='$param25',ser_descripcion='$param26',ser_idresponsable='$param18',ser_img_recog='$foto'  $cond1 $cond WHERE `idservicios`=$id_param2";
 	if($nivel_acceso==3){
 		
-		$dir="ticketfactura.php";
+		// $dir="ticketfactura.php";
+		// $pagina2="inicio.php";
+		$dir="firmadigital.php";
 		$pagina2="inicio.php";
 		
 	}else {
-		$dir="recogerpaquete.php";
-		$pagina2="recogerpaquete.php";
+		// $dir="recogerpaquete.php";
+		// $pagina2="recogerpaquete.php";
+		$dir="firmadigital.php";
+		$pagina2="recogerpaquete.php";	
 		
 	}
+
+	 // Preparar la consulta SQL para insertar los datos en la tabla firma_clientes
+	$sql8 = "INSERT INTO firma_clientes (id_guia, tipo_firma, nombre, numero_documento,correo_electronico, telefono,enviar_whatsapp,foto) 
+	VALUES ('$id_param2', 'Recogida', '$param82', '$param83', '$param84', '$param85', '$param86','')";
+	$idfirma=$DB->Executeid($sql8); 
 
 	$sql7="UPDATE `seguimientoruta` SET `seg_guia`='$planilla',`seg_estado`='completado',`seg_fechafinalizo`='$fechatiempo' WHERE `seg_idservicio`='".$_REQUEST['id_param2']."' AND  seg_tipo='Recogida' and seg_estado!='Cambioruta' AND seg_fecha like '%$fechaactual%'";
 	$DB->Executeid($sql7); 
@@ -381,7 +401,7 @@ else if($param1=='ENTREGADO'){
 	$porcobrar=$_REQUEST["porcobrar"];
 	$param30=$_REQUEST["param30"];
 	$kilosvolumen=$_REQUEST["param20"];
-
+	$imprimir='Entrega';
 
 	if($param30!="0"){
 		$pagos=explode('|',$param30);
@@ -406,7 +426,15 @@ else if($param1=='ENTREGADO'){
 		$valorporcentaje=($param114*$porcentaje)/100;
 		$valorporempresa=($param114*$porcentajeempresa)/100;
 		$cond0=",cue_porcentaje='$porcentaje',cue_porempresa='$porcentajeempresa',cue_valorporcantaje='$valorporcentaje',cue_valorporempresa='$valorporempresa'";
-	
+		if (is_uploaded_file($_FILES['param87']['tmp_name'])){
+			// $imagen1 = md5(date("Y-m-d-H-i-s").$param3).".jpg";
+			$nombreArchivo1 = $_FILES["param87"]["name"];
+			$foto = date("Y-m-d-H-i-s").$nombreArchivo1;
+		   
+			move_uploaded_file($_FILES['param87']['tmp_name'], "./imgServicios/".$foto);
+		 }else{
+			 $foto = "";
+		 }
 	if($porcobrar==0){
 
 		if($iduserentrega==''){
@@ -436,7 +464,9 @@ else if($param1=='ENTREGADO'){
 			$sql4="INSERT INTO `abonosguias`(`abo_fecha`, `abo_valor`, `abo_idservicio`, `abo_iduser`, `abo_idsede`, `abo_estado`)  VALUES ('$fechatiempo','$param19','$id_param2','$id_usuario','$id_sedes','devolucion')";
 			$DB->Execute($sql4);
 		}
-		$sql1="UPDATE `servicios` SET `ser_estentrega`='$param1',ser_fechafinal='$fechatiempo',ser_fechaguia='$fechatiempo',`ser_estado`='10' WHERE `idservicios`=$id_param2";
+
+
+		$sql1="UPDATE `servicios` SET `ser_estentrega`='$param1',ser_fechafinal='$fechatiempo',ser_fechaguia='$fechatiempo',`ser_estado`='10',ser_img_entre='$foto' WHERE `idservicios`=$id_param2";
 		if($tipopago>1 and $cambios==""){
 
 			if ($_FILES['param40']['error'] === UPLOAD_ERR_OK) {
@@ -467,11 +497,15 @@ else if($param1=='ENTREGADO'){
 
 		if($nivel_acceso==3){
 			
-			$dir="ticketfactura.php";
+			// $dir="ticketfactura.php";
+			// $pagina2="inicio.php";
+			$dir="firmadigital.php";
 			$pagina2="inicio.php";
 		}else {
-				$dir="entregas.php";
-				$pagina2="entregas.php";
+				// $dir="entregas.php";
+				// $pagina2="entregas.php";
+				$dir="firmadigital.php";
+				$pagina2="inicio.php";
 			}
 	
 	}else{
@@ -503,7 +537,7 @@ else if($param1=='ENTREGADO'){
 		}
 
 		$st=2; 
-		$sql2="UPDATE servicios SET ser_pendientecobrar=$st WHERE idservicios='$id_param2' ";
+		$sql2="UPDATE servicios SET ser_pendientecobrar=$st,ser_img_entre='$foto' WHERE idservicios='$id_param2' ";
 		$DB1->Execute($sql2);
 		$sql1="UPDATE `cuentaspromotor` SET `cue_pendientecobrar`='$st',cue_idoperpendiente='$id_usuario'  $tranf where cue_idservicio=$id_param2";
 			
@@ -523,7 +557,10 @@ else if($param1=='ENTREGADO'){
 	$sql7="UPDATE `seguimientoruta` SET `seg_estado`='completado',`seg_fechafinalizo`='$fechatiempo',`seg_guia`='$param11' WHERE `seg_idservicio`='$id_param2'  AND  seg_tipo='Entrega' and seg_estado!='Cambioruta' AND seg_fecha like '%$fechaactual%'";
 	$DB->Executeid($sql7); 
 	
-	
+	// Preparar la consulta SQL para insertar los datos en la tabla firma_clientes
+	$sql8 = "INSERT INTO firma_clientes (id_guia, tipo_firma, nombre, numero_documento,correo_electronico, telefono,enviar_whatsapp) 
+	VALUES ('$id_param2', 'Entrega', '$param82', '$param83', '$param84', '$param85', '$param86')";
+	$idfirma=$DB->Executeid($sql8);
 	
 
 	
@@ -684,7 +721,8 @@ if ($DB->Execute($sql1))
 	$DB1->cerrarconsulta();
 //pop_dis3($id_p,\"Recoger Paquete\")
 //exit;
-header ("Location: $dir?pagina2=$pagina2&bandera=$bandera&tabla=$tabla&id_param=$id_param2&param34=$param34");
+// header ("Location: $dir?pagina2=$pagina2&bandera=$bandera&tabla=$tabla&id_param=$id_param2&param34=$param34");
+header ("Location: $dir?pagina2=$pagina2&bandera=$bandera&tabla=$tabla&id_param=$id_param2&param34=$param34&idfirma=$idfirma&idguia=$planilla&imprimir=$imprimir&p=$estadop");
 
 
 
