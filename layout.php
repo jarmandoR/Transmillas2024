@@ -633,7 +633,14 @@ $activo=true;
                                         </span>
                                     </a>
                                 </li>
-                        
+                                <li <?php echo$controlDeUso; ?>>
+                                    <a href="guias_no_identi.php?idmen=194" ><i class="glyphicon glyphicon-bell"></i><span>Guias- 
+                                        <i id='notif' >
+                                                        <?=$numerocomfirmar?>
+                                        </i>
+                                        </span>
+                                    </a>
+                                </li>
   
                         <?php 
                         }elseif($nivel_acceso==2 or $nivel_acceso==5){
