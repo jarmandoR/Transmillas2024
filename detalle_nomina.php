@@ -1268,7 +1268,26 @@ if ($activoEnNomina) {
 					$diassitrabajoParaMostrar=$rw4[0]+$diasDescanso;
 				// }
 
-			}else{
+			}elseif($fin==28 and $param36=='Segunda' or $fin==28 and $param36=='Completo' ){
+					
+
+				if ($rw4[0]<=0 or $mesdeingreso==true){
+					$dia29=0;
+					
+					# code...
+				}else{
+
+					
+					$dia29=2;
+				}
+				
+				$diassitrabajo=$rw4[0]+$diasDescanso+$dia29;
+				$diassitrabajoParaSumar=$rw4[0]+$diasDescanso+$dia29;
+				$diassitrabajoConAuxilio=$rw4[0]+$dia29;
+				$diassitrabajoParaMostrar=$rw4[0]+$diasDescanso;
+			// }
+
+		}else{
 					
 					$diassitrabajo=$rw4[0]+$diasDescanso;
 					$diassitrabajoParaSumar=$rw4[0]+$diasDescanso;

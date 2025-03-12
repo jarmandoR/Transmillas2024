@@ -92,12 +92,14 @@ if($dia>=5 and $dia<=20){
 	$mes=date('m');
 	$añoA=date('Y');
 $quincena1='Primera';
-}elseif($dia<=5){
+}elseif($dia<=5 ){
 	
-	$mes=date('m');
+	// $mes=date('m');
 	if ($mes==01) {
 		$añoA=date('Y', strtotime('-1 year', strtotime($fechacompleta)));
 
+	}else {
+		$añoA=$añoA=date('Y');
 	}
 	$mes = date('m', strtotime('-1 month', strtotime($fechacompleta)));
 
@@ -109,7 +111,7 @@ $quincena1='Primera';
 	$quincena1='Segunda';
 }
 $startYear = 2024; // Año inicial
-$currentYear = 2030; // Año actual
+$currentYear = 2025; // Año actual
 for ($year = $startYear; $year <= $currentYear; $year++){
 	
 	$años["$year"]="$year";
