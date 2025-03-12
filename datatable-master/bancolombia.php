@@ -171,6 +171,28 @@ $id_nombre=$_GET['id_nombre'];
 
             });
         }
+        function QuitarDatos(id, tabla) {
+            alertify.confirm('Eliminar un Registro', '¿Seguro de eliminar este Registro :(?', function () {
+                $.ajax({
+                    type: "POST",
+                    data: "id=" + id + "&tabla=" + tabla,
+                    url: "procesos/eliminar.php",
+                    success: function (r) {
+                        if (r == 1) {
+                            // Recargar la página actual
+                            location.reload();
+                            // Opcionalmente, puedes recargar solo la tabla si es un componente dinámico
+                            // $('#tablaDatatable').DataTable().ajax.reload();
+                            alertify.success("Eliminado con éxito !");
+                        } else {
+                            alertify.error("No se pudo eliminar...");
+                        }
+                    }
+                });
+            }, function () {
+
+            });
+        }
 
 			function actualizarFactura() {
 

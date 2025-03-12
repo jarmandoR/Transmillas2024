@@ -103,30 +103,31 @@
 				});
 			}, function () {});
 		}
+		function QuitarDatos(id, tabla) {
+            alertify.confirm('Eliminar un Registro', '¿Seguro de eliminar este Registro :(?', function () {
+                $.ajax({
+                    type: "POST",
+                    data: "id=" + id + "&tabla=" + tabla,
+                    url: "procesos/eliminar.php",
+                    success: function (r) {
+						console.log(r);
+                        if (r == 1) {
+                            // Recargar la página actual
+                            location.reload();
+                            // Opcionalmente, puedes recargar solo la tabla si es un componente dinámico
+                            // $('#tablaDatatable').DataTable().ajax.reload();
+                            alertify.success("Eliminado con éxito !");
+                        } else {
+                            alertify.error("No se pudo eliminar...");
+                        }
+                    }
+                });
+            }, function () {
 
-		// function actualizarFactura(idTransaccion) {
-		// 	var nuevoValor = $('#inputFactura' + idTransaccion).val();
+            });
+        }
 
-		// 	if (nuevoValor.trim() !== '') {
-		// 		$.ajax({
-		// 			type: 'POST',
-		// 			url: 'actualizar_factura.php',
-		// 			data: { idTransaccion: idTransaccion, nuevoValor: nuevoValor, tabla: 'Davivienda' },
-		// 			success: function (response) {
-		// 				console.log(response);
-		// 				if (response == 'OK') {
-		// 					$('#tdFactura' + idTransaccion).text(nuevoValor);
-		// 					alertify.success("La factura se actualizó correctamente !");
-		// 				}
-		// 			},
-		// 			error: function (error) {
-		// 				console.error(error);
-		// 			}
-		// 		});
-		// 	} else {
-		// 		alert('Ingrese un nuevo valor para la factura.');
-		// 	}
-		// }
+		
 
 		$(document).ready(function () {
 			cargarContenidoPestanaActiva();

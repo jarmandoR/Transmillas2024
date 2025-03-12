@@ -47,8 +47,12 @@
 		public function eliminar($id,$tabla){
 			$obj= new conectar();
 			$conexion=$obj->conexion();
-
-			$sql="DELETE from $tabla where $id";
+			if ($tabla=="transdavivienda") {
+				$campo="Idtransdavivienda";
+			}else {
+				$campo="Idtransbancolombia";
+			}
+			$sql="DELETE from $tabla where $campo= $id";
 			return mysqli_query($conexion,$sql);
 		}
 	}

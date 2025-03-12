@@ -50,6 +50,7 @@ $campos = mysqli_fetch_fields($result);
                     <th>Confirmar</th>
                     <th>Seleccionar</th>
                     <th>Remover</th>
+                    <th>Eliminar</th>
                 </tr>
             </thead>
             <tfoot style="background-color: #ccc;color: white; font-weight: bold;">
@@ -130,6 +131,11 @@ $campos = mysqli_fetch_fields($result);
                         <td style="text-align: center;">
                         <span class="btn btn-danger btn-sm" onclick="eliminarDatos('<?php  echo $mostrar[0] ?>','Bancolombia')">
                             <span class="fa fa-minus-circle"></span>
+                        </span>
+                        </td>
+                        <td style="text-align: center;">
+                        <span class="btn btn-danger btn-sm" onclick="QuitarDatos('<?php  echo $mostrar[0] ?>','transbancolombia')">
+                            <span class="fa-trash"></span>
                         </span>
                         </td>
                     </tr>
