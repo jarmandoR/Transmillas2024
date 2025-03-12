@@ -144,3 +144,18 @@ $FB->div_valores("destino_vesr",6);
 
 include("footer.php");
 ?>
+<script>
+        function validarNombre() {
+            let inputNombre = document.getElementById("param82").value.trim();
+            let errorMensaje = document.getElementById("errorNombre");
+
+            // Expresión regular: verifica que haya al menos dos palabras separadas por un espacio
+            let regex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ]+ [A-Za-zÁÉÍÓÚáéíóúÑñ]+$/;
+
+            if (regex.test(inputNombre)) {
+                errorMensaje.style.display = "none"; // Esconde el mensaje si es válido
+            } else {
+                errorMensaje.style.display = "block"; // Muestra el mensaje si no es válido
+            }
+        }
+    </script>

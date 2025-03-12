@@ -269,7 +269,7 @@ $DB->Execute($sql); $va=0;
 				$DB1->Execute($image); 
 				$rw2=mysqli_fetch_row($DB1->Consulta_ID);
 				if( is_null($rw2[0])){
-					$recogida="<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"Recogida\")';  style='cursor: pointer;' title='Foto guia' >Subir Foto Guia</a>";
+					$recogida="<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"Recogida\")';  style='cursor: pointer;' title='Foto guia' >Subir Foto Guia </a><br> <br><button onclick='abrirPopup(\"".$rw1[11]."\",\"$tipo\",$id_p)'>Ratificar</button>";
 					$validarecogida="NO";
 				}else {
 
@@ -304,7 +304,7 @@ $DB->Execute($sql); $va=0;
 				$DB1->Execute($imagee); 
 				$rw2e=mysqli_fetch_row($DB1->Consulta_ID);
 				if( is_null($rw2e[0])){
-					$entrega="<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"Entrega\")';  style='cursor: pointer;' title='Foto guia' >Subir Foto Guia</a> ";
+					$entrega="<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"Entrega\")';  style='cursor: pointer;' title='Foto guia' >Subir Foto Guia</a><br><button onclick='abrirPopup(\"".$rw1[3]."\",\"$tipo\",$id_p)'>Ratificar</button>";
 					$validaentrega="NO";
 				
 				}else {
@@ -394,7 +394,7 @@ $DB->Execute($sql); $va=0;
 					";
 					$guiatipo=$rw1[3]."_$tipo";
 					echo "<td align='center' >";
-					echo "<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"$guiatipo\")';  style='cursor: pointer;' title='Foto guia' >Subir Foto Guia</a></td>";
+					echo "<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"$guiatipo\")';  style='cursor: pointer;' title='Foto guia' >Subir Foto Guia</a><br><button onclick='abrirPopup(\"".$rw1[3]."\",\"$tipo\",$id_p)'>Ratificar</button></td>";
 					if($nivel_acceso==1 or $nivel_acceso==9){
 						echo "<td>NO</td>";
 					}
@@ -482,7 +482,7 @@ $DB->Execute($sql); $va=0;
 								";
 								$guiatipo=$rw1[3]."_$tipo";
 								echo "<td align='center' >";
-								echo "<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"$guiatipo\")';  style='cursor: pointer;' title='Foto guia' >Subir Foto Guia</a></td>";
+								echo "<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"$guiatipo\")';  style='cursor: pointer;' title='Foto guia' >Subir Foto Guia</a><br><button onclick='abrirPopup(\"".$rw1[3]."\",\"$tipo\",$id_p)'>Ratificar</button></td>";
 								if($nivel_acceso==1 or $nivel_acceso==9){
 									echo "<td>NO</td>";
 								}
@@ -545,3 +545,10 @@ $DB->Execute($sql); $va=0;
 
 include("footer.php");
 ?>
+<script>
+	function abrirPopup(idguia,imprimir,id_param) {
+		event.preventDefault();
+
+		window.open("ratificafirmadigital.php?idguia="+idguia+"&imprimir="+imprimir+"&id_param="+id_param+"", "popup", "width=600,height=400");
+	}
+</script>

@@ -104,6 +104,7 @@ if($param28==1){
 
 
 
+
 if($param27=='1000'){
 	$valorflete=str_replace(".","", $param100);
 	$sql1="INSERT INTO `servicios`(`ser_iddocumento`,`ser_telefonocontacto`, `ser_destinatario`, `ser_direccioncontacto`,`ser_ciudadentrega`, `ser_tipopaquete`, `ser_paquetedescripcion`, `ser_fechaentrega`,`ser_prioridad`,  `ser_valorprestamo`, `ser_valorabono`, `ser_valorseguro`,  `ser_fecharegistro`,ser_clasificacion,ser_valor,ser_piezas) 

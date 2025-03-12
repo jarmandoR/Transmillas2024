@@ -77,6 +77,10 @@ $FB->titulo_azul1("Tipo PQ",1,0,0);
 $FB->titulo_azul1("Descripcion",1,0,0); 
 $FB->titulo_azul1("Destinatario",1,0,0); 
 $FB->titulo_azul1("Ciudad",1,0,0); 
+$FB->titulo_azul1("¿Se va?",1,0,0); 
+$FB->titulo_azul1("Quien escaneo",1,0,0); 
+$FB->titulo_azul1("Fecha escaneo",1,0,0); 
+
 $FB->titulo_azul1("Enviar",1,0,0); 
 
 
@@ -94,17 +98,24 @@ $sql="SELECT `idservicios`, `ser_consecutivo`,`ser_tipopaquete`,`ser_paquetedesc
 $DB->Execute($sql); $va=0; 
 	while($rw1=mysqli_fetch_row($DB->Consulta_ID))
 	{
+		$transporta="";
+		$quienescaneo="";
+		$fechaescaneo="";
 		$id_p=$rw1[0];
 		
 		if($rw1[8]>1){
 
 			$piezaenviada=array();
-				$sqll1="SELECT `idpiezasguia`, `numeroguia`, `numeropieza` FROM `piezasguia` WHERE numeroguia='$rw1[1]'";
+				$sqll1="SELECT `idpiezasguia`, `numeroguia`, `numeropieza`, `transporta`,`quien_escanea`,fecha_escanea FROM `piezasguia` WHERE numeroguia='$rw1[1]'";
 				$DB1->Execute($sqll1);
 				while($datos=mysqli_fetch_row($DB1->Consulta_ID))
 				{
 					$piezaenviada[]=$datos[2];
 					$numerospezas=$datos[2];
+					$transporta=$datos[3];
+					$quienescaneo=$datos[4];
+					$fechaescaneo=$datos[5];
+					$idpieza=$datos[0];
 				}
 				if($rw1[8]==$numerospezas){  }
 				for($a=1;$a<=$rw1[8];$a++){
@@ -124,7 +135,20 @@ $DB->Execute($sql); $va=0;
 					<td>".$rw1[2]."</td>
 					<td>".$rw1[3]."</td>
 					<td>".$rw1[4]."</td>		
-					<td>".$rw1[5]."</td>
+					<td>".$rw1[5]."</td>";
+				
+
+					echo"<td>
+					<select class='form-select mb-3' name='tipoVehiculo' id='tipoVehiculo'  onchange=\"enviarDatos(this.value, '$idpieza')\">>
+					<option value=''>Seleccione el tipo de vehículo o situacion del paquete:</option>
+						<option value='Bus'" . ($transporta == "Bus" ? "selected" : "") . ">Bus</option>
+						<option value='Jurgon'" . ($transporta == "Jurgon" ? "selected" : "") . ">Jurgón</option>
+						<option value='En escala temporal'" . ($transporta == "En escala temporal" ? "selected" : "") . "> En escala temporal</option>
+						<option value='Devuelto a centro de distribucion'" . ($transporta == "Devuelto a centro de distribucion" ? "selected" : "") . ">Devuelto a centro de distribucion</option>
+					</select></td>";
+					echo "
+					<td>".$quienescaneo."</td>
+					<td>".$fechaescaneo."</td>
 					";
 					echo "<td><input type='checkbox' name='asignar_$va' id='asignar_$va' value='1' style='width:95px; class='trans' >
 					<input name='servicio_$va' id='servicio_$va' type='hidden'  value='$rw1[0]'>
@@ -136,6 +160,16 @@ $DB->Execute($sql); $va=0;
 					}
 				}
 			}else {
+				$sqll1="SELECT `idpiezasguia`, `numeroguia`, `numeropieza`, `transporta`,`quien_escanea`,fecha_escanea FROM `piezasguia` WHERE numeroguia='$rw1[1]'";
+				$DB1->Execute($sqll1);
+				while($datos=mysqli_fetch_row($DB1->Consulta_ID))
+				{
+
+					$transporta=$datos[3];
+					$quienescaneo=$datos[4];
+					$fechaescaneo=$datos[5];
+					$idpieza=$datos[0];
+				}
 				$va++; $p=$va%2;
 				if($p==0){$color="#FFFFFF";} else{$color="#EFEFEF";}
 				echo "<tr class='text' bgcolor='$color' onmouseover='this.style.backgroundColor=\"#C8C6F9\"' onmouseout='this.style.backgroundColor=\"$color\"'>";
@@ -147,7 +181,20 @@ $DB->Execute($sql); $va=0;
 				<td>".$rw1[2]."</td>
 				<td>".$rw1[3]."</td>
 				<td>".$rw1[4]."</td>		
-				<td>".$rw1[5]."</td>
+				<td>".$rw1[5]."</td>";
+				
+
+				echo"<td>
+				<select class='form-select mb-3' name='tipoVehiculo' id='tipoVehiculo'  onchange=\"enviarDatos(this.value, '$idpieza')\">
+				<option value=''>Seleccione el tipo de vehículo o situacion del paquete:</option>
+					<option value='Bus'" . ($transporta == "Bus" ? "selected" : "") . ">Bus</option>
+					<option value='Jurgon'" . ($transporta == "Jurgon" ? "selected" : "") . ">Jurgón</option>
+					<option value='En escala temporal'" . ($transporta == "En escala temporal" ? "selected" : "") . "> En escala temporal</option>
+					<option value='Devuelto a centro de distribucion'" . ($transporta == "Devuelto a centro de distribucion" ? "selected" : "") . ">Devuelto a centro de distribucion</option>
+				</select></td>";
+				echo "
+				<td>".$quienescaneo."</td>
+				<td>".$fechaescaneo."</td>
 				";
 				echo "<td><input type='checkbox' name='asignar_$va' id='asignar_$va' value='1' style='width:95px; class='trans' >
 				<input name='servicio_$va' id='servicio_$va' type='hidden'  value='$rw1[0]'>
@@ -164,3 +211,39 @@ echo "<input name='registros' id='registros' type='hidden'  value='$va'>";
 $FB->llena_texto("tipoguia", 1, 13, $DB, "", "","sedes", 5, 0);
 include("footer.php");
 ?>
+<script>
+	function enviarDatos(tipoVehiculo,variable1) {
+    // var tipoVehiculo = document.getElementById("tipoVehiculo").value;
+    // if (tipoVehiculo === "") {
+    //     return; // No enviar si no se ha seleccionado una opción válida
+    // }
+
+    // // Pasar las variables de PHP a JavaScript
+    // var variable1 = "<?php echo $idpieza;?>";
+    var variable2 = "";
+
+
+
+    var datos = {
+        tipoVehiculo: tipoVehiculo,
+        variable1: variable1,
+        variable2: variable2
+    };
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "enviarpor.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            console.log("Respuesta del servidor:", xhr.responseText);
+        }
+    };
+
+    var parametros = "tipoVehiculo=" + encodeURIComponent(datos.tipoVehiculo) + 
+                     "&variable1=" + encodeURIComponent(datos.variable1) + 
+                     "&variable2=" + encodeURIComponent(datos.variable2);
+
+    xhr.send(parametros);
+}
+</script>

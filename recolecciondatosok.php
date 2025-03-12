@@ -200,15 +200,15 @@ if($precio=='' or $precio==null){
 if($param27==''){
 	$param27=0;
 }
-if (is_uploaded_file($_FILES['param87']['tmp_name'])){
+// para guardar imagen del paquete o servicio
+if (is_uploaded_file($_FILES['param91']['tmp_name'])){
 	// $imagen1 = md5(date("Y-m-d-H-i-s").$param3).".jpg";
-	$nombreArchivo1 = $_FILES["param87"]["name"];
+	$nombreArchivo1 = $_FILES["param91"]["name"];
 	$foto = date("Y-m-d-H-i-s").$nombreArchivo1;
    
-	move_uploaded_file($_FILES['param87']['tmp_name'], "./imgServicios/".$foto);
+	move_uploaded_file($_FILES['param91']['tmp_name'], "./imgServicios/".$foto);
  }else{
 	 $foto = "";
-	 
  }
  if($nivel_acceso==3){ 
 	echo "aki 4";
@@ -281,7 +281,28 @@ if (is_uploaded_file($_FILES['param87']['tmp_name'])){
 		VALUES ('$tipopago','$cuenta','$precio','$id_usuario','$idser','$planilla','Contado','$fechatiempo','$img_transaccion')";
 		$DB1->Execute($sql5);
 	}
+		 // Preparar la consulta SQL para insertar los datos en la tabla firma_clientes
+		 echo$sql8 = "INSERT INTO firma_clientes (id_guia, tipo_firma, nombre, numero_documento,correo_electronico, telefono,enviar_whatsapp,foto) 
+		 VALUES ('$idser', 'Recogida', '$param92', '', '', '$param93', '','')";
+		 $idfirma=$DB->Executeid($sql8); 
 
+		 $sql12 = "SELECT idservicios,ser_estado,cli_telefono,ser_consecutivo FROM `serviciosdia` WHERE  idservicios = '$idser'";			
+			$DB1->Execute($sql12);
+			$rw12 = mysqli_fetch_array($DB1->Consulta_ID);
+			
+			
+			if ($rw12 === false) {
+			}else {
+
+					$numguia=$planilla;
+					$telefono=$rw12[2];
+					$idservicio=$idser;
+					
+					enviarAlertaWhat($numguia,$telefono,2,$idservicio);
+					// enviarAlertaWhat($numguia,"3160490959",2,$idservicio);
+
+				
+			}
 	$DB->cerrarconsulta();
 	$DB1->cerrarconsulta();
 	//$guia!=''
@@ -294,13 +315,21 @@ if (is_uploaded_file($_FILES['param87']['tmp_name'])){
 	// 	$pagina2="configuracion.php?idmen=163";
 	// 	header ("Location: ticketfactura.php?pagina2=$pagina2&id_param=$idser");
 	// }
+	
+	if ($tipopago==1) {
+		$tpago="Contado";
+	}elseif ($tipopago==2) {
+		$tpago="Credito";
+	}elseif ($tipopago==3) {
+		$tpago="al cobro";
+	}
 	if($nivel_acceso!=3){
 		$pagina2="imprimirfactura.php";
-		header ("Location: firmadigital.php?pagina2=$pagina2&param15='reenviar'&id_param=$idser&idfirma=$idfirma&idguia=$planilla&imprimir=Recogida&p=$tipopago");
+		header ("Location: firmadigital.php?pagina2=$pagina2&param15='reenviar'&id_param=$idser&idfirma=$idfirma&idguia=$planilla&imprimir=Recogida&p=$tpago");
 	} else {
 		
 		$pagina2="configuracion.php";
-		header ("Location: firmadigital.php?pagina2=$pagina2&id_param=$idser&idfirma=$idfirma&idguia=$planilla&imprimir=Recogida&p=$tipopago");
+		header ("Location: firmadigital.php?pagina2=$pagina2&id_param=$idser&idfirma=$idfirma&idguia=$planilla&imprimir=Recogida&p=$tpago");
 	}
 
  }else {
@@ -308,4 +337,68 @@ if (is_uploaded_file($_FILES['param87']['tmp_name'])){
 	header ("Location: inicio.php");
 }
 
+function enviarAlertaWhat($numguia,$telefono,$tipo,$idservi){
+
+	if (preg_match('/^\d{10}$/', $telefono)) {
+		// echo "La variable tiene exactamente 10 números.";
+
+			// URL de la API
+		$url = "https://www.transmillas.com/ChatbotTransmillas/alertas.php";
+
+		// Datos que enviarás en la solicitud
+		$data = array(
+			"numero_guia" => "$numguia", // Número de guía
+			"telefono" => "$telefono",  // Número de teléfono 3160490959
+			// "telefono" => "3107781913",  // Número de teléfono 3160490959
+			"tipo_alerta" => "$tipo",
+			"id_guia" => "$idservi"
+		);
+
+
+		// Convertir los datos a formato JSON
+		$data_json = json_encode($data);
+
+		// Iniciar una sesión cURL
+		$curl = curl_init();
+
+		// Configurar las opciones cURL
+		curl_setopt_array($curl, array(
+			CURLOPT_URL => $url, // URL de la API
+			CURLOPT_RETURNTRANSFER => true, // Retorna el resultado como cadena
+			CURLOPT_POST => true, // Indica que la solicitud será POST
+			CURLOPT_POSTFIELDS => $data_json, // Los datos que se envían en la solicitud
+			CURLOPT_HTTPHEADER => array(
+				'Content-Type: application/json', // Tipo de contenido
+				'Authorization: Bearer MiSuperToken123' // Si la API requiere autenticación
+			),
+		));
+
+		// Ejecutar la solicitud y obtener la respuesta
+		$response = curl_exec($curl);
+
+		// Manejar errores cURL
+		if($response === false) {
+			$error = curl_error($curl);
+			echo "Error en la solicitud: $error";
+		} else {
+			// Decodificar la respuesta (si es JSON)
+			$response_data = json_decode($response, true);
+			
+			// Mostrar la respuesta
+			echo "Respuesta de la API: ";
+			print_r($response_data);
+		}
+
+		// Cerrar la sesión cURL
+		curl_close($curl);
+	} else {
+		echo "La variable no cumple con el formato.";
+	}
+
+
+
+
+
+
+}
 ?>

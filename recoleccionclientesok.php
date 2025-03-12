@@ -630,10 +630,23 @@ function recoger($idser,$fechatiempo){
 				$DB1->Execute($sql13);
 			}
 			
+			// para guardar imagen del paquete o servicio
+			// if (is_uploaded_file($_FILES['param91']['tmp_name'])){
+			// 	// $imagen1 = md5(date("Y-m-d-H-i-s").$param3).".jpg";
+			// 	$nombreArchivo1 = $_FILES["param91"]["name"];
+			// 	$foto = date("Y-m-d-H-i-s").$nombreArchivo1;
+			
+			// 	move_uploaded_file($_FILES['param91']['tmp_name'], "./imgServicios/".$foto);
+			// }else{
+			// 	$foto = "";
+			// }
 			$sql14="UPDATE `servicios` SET `ser_consecutivo`='$planilla',`ser_resolucion`='$rw1[2]',`ser_recogida`='$param1',  `ser_paquetedescripcion`='$param3', `ser_valorseguro`='$param6', `ser_horaentrega`='$param7', `ser_clasificacion`='$param8',`ser_fechafinal`='$fechatiempo',`ser_fechaasignacion`='$fechatiempo',`ser_estado`='4',ser_devolverreci='$param29',ser_tipopaq='$param21',ser_verificado='$param19',ser_volumen='$param20',ser_guiare='$param25',ser_descripcion='$param26',ser_idresponsable='$param18'  $cond1 $cond WHERE `idservicios`=$idser";
 			$DB1->Executeid($sql14);
 				
-		
+				 // Preparar la consulta SQL para insertar los datos en la tabla firma_clientes
+				//  echo$sql16 = "INSERT INTO firma_clientes (id_guia, tipo_firma, nombre, numero_documento,correo_electronico, telefono,enviar_whatsapp,foto) 
+				//  VALUES ('$idser', 'Recogida', '$param92', '', '', '$param93', '','')";
+				//  $idfirma=$DB->Executeid($sql16); 
 			// if($nivel_acceso==3){
 				
 			// 	$dir="ticketfactura.php";

@@ -463,10 +463,10 @@ $FB->llena_texto("variableunica", 1, 13, $DB, "", "", "$variableunica", 5, 0);
 
 $FB->titulo_azul1("Datos quien recibe",14,0, 5); 
 // $FB->llena_texto("Foto :",87, 6, $DB, "", "","", 1, 1);
-echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param87' name='param87' required  capture='environment'></td></tr>";
+echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param91' name='param91' required  capture='environment'></td></tr>";
 
-$FB->llena_texto("Nombre:",82, 1, $DB, "", "","", 1, 1);
-$FB->llena_texto("Telefono Whatsapp:",85, 1, $DB, "", "","", 1, 1);
+$FB->llena_texto("Nombre:",92, 1, $DB, "", "","", 1, 1);
+$FB->llena_texto("Telefono Whatsapp:",93, 1, $DB, "", "","", 1, 1);
 
 echo '<tr><td colspan=2 align="right" class="text"><div id="llega_sub3">';
 $FB->titulo_azul1("Valor",8,0,5);  
@@ -476,3 +476,16 @@ echo '</div></td></tr></table>';
  $FB->llena_texto("", 1, 142, $DB, "Guardar", "", 0, 12, 0);
 require("footer.php");
 ?> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("param26").addEventListener("input", function() {
+                let valor = parseFloat(this.value);
+                if (valor > 0) {
+					
+						alert("Verifica si este servicio tiene volumen antes de guardar");
+
+	
+                }
+            });
+        });
+    </script>

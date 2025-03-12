@@ -293,10 +293,11 @@ else if($cond==12){
 		//Nuevo
 		$FB->titulo_azul1("Datos quien entrega",14,0, 5); 
 		// $FB->llena_texto("Foto:",87,6, $DB, "", "","", 1, 1);
-		echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param87' name='param87' require capture='environment'></td></tr>";
-		
+		echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param87' name='param87' required capture='environment'></td></tr>";
+		echo'<tr class="text"><td><label for="nombre">Nombre completo:</label></td>
+		<td><input type="text" id="param82" name="param82" required oninput="validarNombre()"><p id="errorNombre" class="error"  style="color: red;font-size: 14px; display: none;" >Debe ingresar nombre y apellido.</p><td></tr>';
 
-		$FB->llena_texto("Nombre:",82, 1, $DB, "", "", "", 1, 1);
+		// $FB->llena_texto("Nombre:",82, 1, $DB, "", "", "", 1, 1);
 		// $FB->llena_texto("Documento:",83, 1, $DB, "", "","", 1, 0);
 		$FB->llena_texto("Telefono Whatsapp:",85, 1, $DB, "", "","", 1, 1);
 
@@ -474,9 +475,12 @@ else if($cond==12){
 		//Nuevo
 		$FB->titulo_azul1("Datos quien entrega",14,0, 5); 
 		// $FB->llena_texto("Foto:",87,6, $DB, "", "","", 1, 1);
-		echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param87' name='param87' require capture='environment'></td></tr>";
-
-		$FB->llena_texto("Nombre:",82, 1, $DB, "", "", "", 1, 1);
+		echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param87' name='param87' required capture='environment'></td></tr>";
+		
+		echo'<tr class="text"><td><label for="nombre">Nombre completo:</label></td>
+		<td><input type="text" id="param82" name="param82" required oninput="validarNombre()"><p id="errorNombre" class="error"  style="color: red;font-size: 14px; display: none;" >Debe ingresar nombre y apellido.</p><td></tr>
+		';
+		// $FB->llena_texto("Nombre:",82, 1, $DB, "", "", "", 1, 1);
 		// $FB->llena_texto("Documento:",83, 1, $DB, "", "","", 1, 0);
 		$FB->llena_texto("Telefono Whatsapp:",85, 1, $DB, "", "","", 1, 1);
 	
@@ -720,8 +724,8 @@ else if($cond==27) {
 	if($param1!='Oficina'){ $cond1=" and `usu_tipovehiculo`='$param1'"; } else { $cond1=" and roles_idroles!=3"; }
 
 	 $sql="SELECT `idusuarios`,`usu_nombre`,zon_nombre FROM  seguimiento_user inner join zonatrabajo on seg_idzona=idzonatrabajo  inner join  `usuarios` on idusuarios=seg_idusuario inner join ciudades on inner_sedes=usu_idsede WHERE `roles_idroles` in (2,3,5) and seg_fechaalcohol='$fechaactual' and (usu_estado=1 or usu_filtro=1) and idciudades=$para and `seg_motivo`='Ingreso' $cond1 ";
-//	$sql="SELECT `idusuarios`,`usu_nombre` FROM `usuarios` inner join ciudades on inner_sedes=usu_idsede WHERE `roles_idroles` in (2,3,5) and  (usu_estado=1 or usu_filtro=1) and idciudades=$para $cond1 ";
-	echo "<select name='$nombre' id='$nombre' class='form-control' onChange='llena_datos();'>";
+//	llena_datos() //$sql="SELECT `idusuarios`,`usu_nombre` FROM `usuarios` inner join ciudades on inner_sedes=usu_idsede WHERE `roles_idroles` in (2,3,5) and  (usu_estado=1 or usu_filtro=1) and idciudades=$para $cond1 ";
+	echo "<select name='$nombre' id='$nombre' class='form-control' >";
 	echo "<option  value=''>Seleccione... </option>";
 	$LT->llenaselect($sql,0,"1-2", $valor, $DB);
 	echo "</select>";

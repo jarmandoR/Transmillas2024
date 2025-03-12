@@ -304,6 +304,10 @@ if($param25==''){
 
 		
 	}
+	if($param8==2){
+		$estadop='Credito';
+	
+	}
 
 }
 else if($param1=='NO RECOGIDO'){
@@ -598,6 +602,19 @@ else if($param1=='ENTREGADO'){
 			
 		}	
 	}
+	$planilla=$rw12[3];
+	
+	if($param30==1){
+		$estadop='Contado';
+	}elseif($param30==3){
+		$estadop='Al Cobro';
+
+	}elseif($param30==2){
+		$estadop='Credito';
+
+	}
+
+	
 
 }else if($param1=='NO ENTREGADO'){
 
@@ -722,6 +739,8 @@ if ($DB->Execute($sql1))
 //pop_dis3($id_p,\"Recoger Paquete\")
 //exit;
 // header ("Location: $dir?pagina2=$pagina2&bandera=$bandera&tabla=$tabla&id_param=$id_param2&param34=$param34");
+
+
 header ("Location: $dir?pagina2=$pagina2&bandera=$bandera&tabla=$tabla&id_param=$id_param2&param34=$param34&idfirma=$idfirma&idguia=$planilla&imprimir=$imprimir&p=$estadop");
 
 

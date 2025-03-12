@@ -466,7 +466,12 @@ if($id_param!=''){
 /* $FB->llena_texto("&iquest;Servicio con Retorno?:", 25, 212, $DB, "", "3","$rw[20]",17, 0);	
 $FB->llena_texto("Tipo de Servicio:",27,279, $DB, "(SELECT `idtiposervicio`,`tip_nom` FROM `tiposervicio`)", "","$valortservicio", 4, 2); */
 if($rw[24]=='' or $rw[24]==NULL or $rw[24]==0){ $creditos=3; } else { $creditos=1; }
+// $FB->titulo_azul1("Datos quien recibe",14,0, 5); 
+// // $FB->llena_texto("Foto :",87, 6, $DB, "", "","", 1, 1);
+// echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param91' name='param91' required  capture='environment'></td></tr>";
 
+// $FB->llena_texto("Nombre:",92, 1, $DB, "", "","", 1, 1);
+// $FB->llena_texto("Telefono Whatsapp:",93, 1, $DB, "", "","", 1, 1);
 echo '</table></div></td></tr>';
 
 

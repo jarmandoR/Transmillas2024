@@ -612,7 +612,15 @@ if (@$actuliza == "si") {
 	
 		}
 	}
+		//Nuevo
+		$FB->titulo_azul1("Datos quien entrega",14,0, 5); 
+		// $FB->llena_texto("Foto:",87,6, $DB, "", "","", 1, 1);
+		echo"<tr class='text'><td><label>Foto (*)</label></td><td><input type='file' accept='image/*' id='param91' name='param91' required capture='environment'></td></tr>";
+		
 
+		$FB->llena_texto("Nombre:",92, 1, $DB, "", "", "", 1, 1);
+		// $FB->llena_texto("Documento:",83, 1, $DB, "", "","", 1, 0);
+		$FB->llena_texto("Telefono Whatsapp:",93, 1, $DB, "", "","", 1, 1);
 $FB->llena_texto("param15", 1, 13, $DB, "", "", "$param15", 5, 0); 
 $FB->llena_texto("param16", 1, 13, $DB, "", "", "", 5, 0); 
 $FB->llena_texto("id_param", 1, 13, $DB, "", "", "$rw[0]", 5, 0); // idcliente
@@ -629,3 +637,17 @@ $FB->llena_texto("variableunica", 1, 13, $DB, "", "", "$variableunica", 5, 0);
 
 
 ?> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("param26").addEventListener("input", function() {
+                let valor = parseFloat(this.value);
+                if (valor > 0) {
+					
+						alert("Verifica si este servicio tiene volumen antes de guardar");
+
+	
+                }
+            });
+
+        });
+    </script>

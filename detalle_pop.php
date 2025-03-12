@@ -3145,21 +3145,44 @@ print_r($pagadas);
 } 
  else if ($tabla == "cambiarruta") {
          $mensaje=$_REQUEST["mensaje"];
+         $idestadoguia="SELECT  seg_idservicio  as id, idseguimientoruta FROM seguimientoruta where `seg_idusuario`='$id_usuario' and seg_fecha like '%$fechaactual%' and seg_estado!='Cambioruta' order by `seg_fechaestado` desc limit 1";
+         $DB->Execute($idestadoguia);
+         $rw1=mysqli_fetch_row($DB->Consulta_ID);
+         $idservicioguia=$rw1[0];
+         $idseguimiento=$rw1[1];   
+         if($idservicioguia=='6'){ $idservicioguia=0; }  
+
+
+
          echo '<div class="containerruta">';
          echo '<div class="headingruta">¡Usted se dirige a: </div>';
          echo '<div class="headingruta">'. $mensaje.'</div>';
          echo '<div class="messageruta">¡Que tenga un buen viaje!</div>';
+         
+            $trans = "SELECT ser_visto FROM servicios where idservicios =$idservicioguia";
+            $DB1->Execute($trans);
+            $transp = mysqli_fetch_array($DB1->Consulta_ID);
+
+            echo "<div id='campo$va'>"; if($transp[0]==1){ $st="SI"; $colorfondo="#074f91"; } else { $st="NO"; $colorfondo="#941727"; } 
+            echo " ¿EN RUTA?<select  style='width:100px;border:1px solid #f9f9f9;background-color:$colorfondo;color:#f9f9f9;font-size:12px'  name='param$va' id='param$va'  onChange='cambio_ajax2(this.value, 71, \"campo$va\", \"$va\", 1, $id_p)'  required>";
+                $LT->llenaselect_ar($st,$estado_rec);
+            echo "</select>";
+        
+            if($rw1[11]==1){
+            echo "<a  onclick='pop_dis133($id_p,\"Recoger Paquete\")';  style='cursor: pointer;' class='btn btn-primary btn-lg' title='Recoger Paquete' role='button' >Recoger</a>";
+             }	
+             echo "</div>";
+            
+      
        echo '</div>';
-          $idestadoguia="SELECT  seg_idservicio  as id, idseguimientoruta FROM seguimientoruta where `seg_idusuario`='$id_usuario' and seg_fecha like '%$fechaactual%' and seg_estado!='Cambioruta' order by `seg_fechaestado` desc limit 1";
-          $DB->Execute($idestadoguia);
-          $rw1=mysqli_fetch_row($DB->Consulta_ID);
-          $idservicioguia=$rw1[0];
-          $idseguimiento=$rw1[1];   
-          if($idservicioguia=='6'){ $idservicioguia=0; }         
+
+       
          $FB->llena_texto("CAMBIAR RUTA",1, 2, $DB, "SELECT  CONCAT(id,'|',tipo,'|',nombre) as iddatos,nombre FROM (SELECT idseguimientoruta as id, seg_direccion as nombre,seg_tipo as tipo,orden FROM seguimientoruta inner join ord_recoentregas on orden_idservicio=seg_idservicio WHERE seg_idusuario =$id_usuario and seg_fecha like '$fechaactual%' and seg_idservicio!='$idservicioguia' and seg_estado!='completado' and seg_estado!='Cambioruta'  and seg_estado!='Reasignada' and seg_estado!='NO Recogida' and seg_estado!='NO entregado' and orden_fechadiaejecucion='$fechaactual'   UNION SELECT idopcionruta as id, `opc_nombre` as nombre,'opcionruta' as tipo,(1000+idopcionruta) as orden FROM `opcionruta` where  idopcionruta!='$idservicioguia' order by orden) as datos ", "", "", 17, 1);
          $FB->llena_texto("MOTIVO :",2,9, $DB, "", "","" ,1, 0);
          $FB->llena_texto("Imagen", 4, 6, $DB, "", "", "", 1, 0);
          $FB->llena_texto("param3", 1, 13, $DB, "", "", "$idseguimiento", 5, 0);
+
+
  } 
  else if ($tabla == "Factura") {   
 
@@ -3445,7 +3468,7 @@ else if ($tabla == "Editar datos") {
  }
 
     echo "<tr bgcolor='#F3F3F3' >
-		<td>Piezas:</td><td >$rw[16]</td> 
+		<td>Piezas:</td><td ><a  onclick='pop_dis5(\"$rw[23]\",\"Seguimiento piezas\")';  style='cursor: pointer;' title='Recogidas' >$rw[16]</a></td> 
         <td>Dice contener:</td><td >$rw[17]</td>
          <td>Tipo Pago:</td><td >$rw[19]    $pendiente </td>
      </tr>";
@@ -3542,6 +3565,16 @@ else if ($tabla == "Editar datos") {
 		 <td>Fecha:</td><td >" . $rw2[10] . "</td>
 		 <td></td><td ></td>  
       </tr>";
+        $trans = "SELECT ser_transporta,ser_quien_escanea,ser_fecha_escanea FROM servicios where idservicios =$id_param";
+        $DB->Execute($trans);
+        $transp = mysqli_fetch_array($DB->Consulta_ID);
+        if ($transp[0]!="") {
+            echo "<tr bgcolor='#FFFFFF' >
+            <td><mark>En $transp[0]</mark></td><td ><mark>" . $transp[1] . "</mark></td>
+            <td>Fecha:</td><td >$transp[2]</td>
+            <td></td><td ></td>  
+            </tr>";
+        }
 
     echo "<tr bgcolor='#FFFFFF' >
 		 <td>Asigno otra sede:</td><td >" . $rw2[11] . "</td>
@@ -3740,7 +3773,7 @@ else if ($tabla == "Editar datos") {
     $FB->llena_texto("param6", 1, 13, $DB, "", "", "$guia", 5, 0);
     $FB->llena_texto("param7", 1, 13, $DB, "", "", "$tipo", 5, 0);
     $FB->llena_texto("id_param", 1, 13, $DB, "", "", $id_param, 5, 0);
-} else if ($tabla == "FotoRemesa") {
+}else if ($tabla == "FotoRemesa") {
 
     $tipo = $_REQUEST["ide"];
 
@@ -3771,15 +3804,17 @@ else if ($tabla == "Editar datos") {
 
 
 
-    $slqs = "SELECT idimagenguias,ima_ruta,ima_tipo FROM imagenguias WHERE ima_idservicio=$id_param and ima_tipo='Recogida'  ";
+    $slqs = "SELECT idimagenguias,ima_ruta,ima_tipo,ima_fecha FROM imagenguias WHERE ima_idservicio=$id_param and ima_tipo='Recogida'  ";
     $DB1->Execute($slqs);
     $imgu=mysqli_fetch_row($DB1->Consulta_ID);
 
+
+
     $FB->llena_texto("PESO KG:", 1, 123, $DB, "", "$valor", $rw[0], 1, 1);
     $FB->llena_texto("VOLUMEN:", 4, 125, $DB, "", "$valor2", $rw[4], 1, 0);
-    $FB->llena_texto("ESTADO PAQUETE:", 2, 9, $DB, "", "", $rw[5], 1, 0);
+    $FB->llena_texto("ESTADO PAQUETE:", 2, 82, $DB, $estadopaquete, "", $rw[5], 1, 0);
     $FB->llena_texto("# GUIA:", 6, 1, $DB, "", "", $rw[6], 1, 0);
-    // $FB->llena_texto("FOTO GUIA", 10, 60, $DB, "", "", "$idmagen", 1, 0);
+    $FB->llena_texto("FOTO GUIA", 10, 60, $DB, "", "", "$idmagen", 1, 0);
     $FB->llena_texto("VERIFICADO:", 3, 5, $DB, "", "", "", 1, 1);
 
 
@@ -3805,12 +3840,28 @@ else if ($tabla == "Editar datos") {
     // echo "<td align='center' >";
     // echo "</td>";
     }
+    $dirguia="$imgu[1]&vis=adm";
     echo'<div class="popup-content">
     <h2>Galería de imágenes</h2>';
-    echo'<div class="thumbnail-container">
-    <img src="'.$imgu[1].'" alt="Miniatura 1" class="thumbnail" onclick="ampliarImagen(this)">
-    <img src="imgServicios/'.$img[0].'" alt="Miniatura 2" class="thumbnail" onclick="ampliarImagen(this)">
-    </div>';
+        echo '<div class="thumbnail-container">';
+        if ($imgu[3]<"2024-05-30") {
+            $colorfoto="";
+            // $confotor="<a href='https://b9e4-190-25-33-50.ngrok-free.app/SistemaTransmillas/$recogidag' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+            echo'<img src="imagesguias/_Recogida.jpg" alt="Miniatura 1" class="thumbnail" onclick="abrirVentana(\''.$imgu[1].'\')">';
+            
+        }elseif ($imgu[3]<="2025-02-13") {
+            $colorfoto="";
+            // $confotor="<a href='$recogidag' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+            echo'<img src="imagesguias/_Recogida.jpg" alt="Miniatura 1" class="thumbnail" onclick="abrirVentana(\''.$imgu[1].'\')">';
+            
+        }else{
+            $colorfoto="";
+            // $confotor="<a href='$recogidag&vis=adm'' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+            echo'<img src="imagesguias/_Recogida.jpg" alt="Miniatura 1" class="thumbnail" onclick="abrirVentana(\''.$dirguia.'\')">';
+            
+        }
+        echo'<img src="imgServicios/'.$img[0].'" alt="Miniatura 2" class="thumbnail" onclick="ampliarImagen(this)">
+        </div>';
     echo"</div>";
     $FB->llena_texto("id_param", 1, 13, $DB, "", "", $id_param, 5, 0);
     $FB->llena_texto("id_param2", 1, 13, $DB, "", "", $id_param, 5, 0);
@@ -3848,6 +3899,27 @@ else if ($tabla == "Editar datos") {
     $FB->llena_texto("ESTADO PAQUETE:", 12, 82, $DB, $estadopaquete, "", @$rw[5], 1, 1);
     $FB->llena_texto("# GUIA:", 6, 1, $DB, "", "", $rw[6], 1, 0);
 
+    $slqs = "SELECT idimagenguias,ima_ruta,ima_tipo FROM imagenguias WHERE ima_idservicio=$rw[11] and ima_tipo='Recogida'  ";
+    $DB1->Execute($slqs);
+    $imgu=mysqli_fetch_row($DB1->Consulta_ID);
+    echo$sqlimg="SELECT ser_img_recog,ser_img_entre from servicios where idservicios=$rw[11] ";
+    $DB1->Execute($sqlimg); 
+    $img=mysqli_fetch_row($DB1->Consulta_ID);
+    if ($img[0]!="") {
+    //  echo "<td align='center' >";
+    //  		echo "<a href='imgServicios/$img[0]' target='_blank'>Ver</td>";
+    }else {
+    // echo "<td align='center' >";
+    // echo "</td>";
+    }
+    $dirguia="$imgu[1]&vis=adm";
+    echo'<div class="popup-content">
+    <h2>Galería de imágenes</h2>';
+        echo '<div class="thumbnail-container">
+        <img src="imagesguias/_Recogida.jpg" alt="Miniatura 1" class="thumbnail" onclick="abrirVentana(\''.$dirguia.'\')">
+        <img src="imgServicios/'.$img[0].'" alt="Miniatura 2" class="thumbnail" onclick="ampliarImagen(this)">
+        </div>';
+    echo"</div>";
 
     if ($rw[12] == "ENTREGADO") {
         echo "<div class='alert alert-danger'>
@@ -4725,6 +4797,54 @@ echo"</tr>";
     // $FB->llena_texto("Valor Final :", 4, 1, $DB, "", "", "", 2, 1);
     $FB->llena_texto("Documento", 3, 6, $DB, "", "", "", 1, 0);
     $FB->llena_texto("param2", 1, 13, $DB, "", "", $prefac, 5, 0);
+}else if ($tabla == "Enviar Guia R" or $tabla == "Enviar Guia E"){
+    // $myArray = $_REQUEST["ide"];
+    // print_r($myArray);
+    if ($tabla == "Enviar Guia R") {
+        $tipo="Recogida";
+    }else {
+        $tipo="Entrega";
+    }
+    $sql2="SELECT ima_ruta,ima_tipo,idimagenguias,ima_fecha from imagenguias where ima_idservicio=$id_param and ima_tipo='$tipo' ";
+        $DB1->Execute($sql2); 
+        $rw1=mysqli_fetch_row($DB1->Consulta_ID);
+
+    $fechaactual = date("Y-m-d");
+    $FB->titulo_azul1("Enviar guia",1,0,7); 
+    echo'<tr><td class="text"><input type="tel" placeholder="Numero de whatsapp" id="tele" name="tele"></td></tr>';
+   
+   
+
+    echo '<tr><td class="text"><a class="btn btn-primary btn-lg" href="#" onclick="enviarAlertaWhat(\''.$id_param.'\', 24, \''.$id_param.'\', \''.$rw1[0].'\');">Enviar</a></td></tr>';
+    // echo '<tr><td><a class="icon-button file-button" href="#" onclick=\'sendEmailfac('.$_GET['ide'].'); return false;\'>Enviar</a><td></tr>';
+    echo'<div id="loading"  style="display: none;">
+    <img src="images/loading.gif" alt="Cargando..."></div>';
+}else if ($tabla == "Seguimiento piezas"){
+
+
+    $FB->titulo_azul1("#Guia",1,0,7); 
+    $FB->titulo_azul1("En?",1,0,0); 
+    $FB->titulo_azul1("Quien?",1,0,0);
+    $FB->titulo_azul1("Fecha",1,0,0);  
+    $FB->titulo_azul1("# pieza",1,0,0);  
+    $sql3="SELECT `idservicios`, `ser_consecutivo`,`ser_tipopaquete`,`ser_paquetedescripcion`, `ser_destinatario`, `ciu_nombre`,`ser_direccioncontacto`,ser_piezas,`ser_guiare`,numeropieza,ser_estado, `transporta`,`quien_escanea`,fecha_escanea FROM serviciosdia inner join piezasguia on ser_consecutivo=numeroguia where  ser_guiare like '%$id_param%' ORDER BY ser_fechafinal ASC";
+
+    $DB1->Execute($sql3);  
+   
+
+    while($rw3=mysqli_fetch_row($DB1->Consulta_ID))
+    {
+        echo "<tr class='text' bgcolor='$color' onmouseover='this.style.backgroundColor=\"#C8C6F9\"' onmouseout='this.style.backgroundColor=\"$color\"'>";
+
+            echo "<td>$rw3[1]</td>";
+            echo "<td>$rw3[11]</td>";
+            echo "<td>$rw3[12]</td>";
+            echo "<td>$rw3[13]</td>";
+            echo "<td>$rw3[9]</td>";
+  
+     } 
+    // $FB->llena_texto("Cargar formato", 3, 6, $DB, "", "", "", 1, 0); 
+    // echo '<tr><td></td><td></td><td></td></tr>';
 }
 
 

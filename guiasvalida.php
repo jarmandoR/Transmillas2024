@@ -64,6 +64,7 @@ $FB->titulo_azul1("Piezas",1,0,0);
 $FB->titulo_azul1("Pieza #",1,0,0); 
 $FB->titulo_azul1("Descripcion",1,0,0); 
 $FB->titulo_azul1("Comentario",1,0,0); 
+$FB->titulo_azul1("¿En?",1,0,0); 
 $FB->titulo_azul1("¿Llego?:",1,0,0); 
 $FB->titulo_azul1("Soporte encautacion si aplica",1,0,0); 
 
@@ -74,7 +75,7 @@ if($param2!="" and $param1!=""){
  $conde2="and $param1 like '%$param2%' "; 
   }else { $conde2="  "; } 
 
-$sql="SELECT `idservicios`, `ser_consecutivo`,`ser_tipopaquete`,`ser_paquetedescripcion`, `ser_destinatario`, `ciu_nombre`,`ser_direccioncontacto`,ser_piezas,`ser_guiare`,numeropieza,ser_estado
+echo$sql="SELECT `idservicios`, `ser_consecutivo`,`ser_tipopaquete`,`ser_paquetedescripcion`, `ser_destinatario`, `ciu_nombre`,`ser_direccioncontacto`,ser_piezas,`ser_guiare`,numeropieza,ser_estado
  FROM serviciosdia inner join piezasguia on ser_consecutivo=numeroguia  where ser_estado in ('6','7')  and guiallega=0  $conde1  $conde2  $conde3  ORDER BY ser_fechafinal $asc ";
 
 $DB->Execute($sql); $va=0; 
@@ -99,7 +100,13 @@ $DB->Execute($sql); $va=0;
 		$descrip="des_$va";
 		//$FB->llena_texto("Descripcion:",$descrip,9, $DB, "", "",@$rw[1] ,1, 0);	
 		echo "<td><textarea name='des_$va' id='des_$va' value='' style='width:195px; class='text' ></textarea></td>";
-	
+		$trans = "SELECT ser_transporta,ser_quien_escanea,ser_fecha_escanea FROM servicios where idservicios =$id_p";
+        $DB1->Execute($trans);
+        $transp = mysqli_fetch_array($DB1->Consulta_ID);
+        
+            echo "
+            <td ><mark>" . $transp[0] . "</mark></td>";
+   
 		echo "<td><div id='campo$va'>";
 		echo "<select  style='width:120px;border:1px solid #f9f9f9;background-color:#074f91;color:#f9f9f9;font-size:15px'  name='$va' id='$va'   class='borrar' required>";
 		$LT->llenaselect_ar("Selecccione...",$estadosguia);

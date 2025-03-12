@@ -1,15 +1,11 @@
 <?php
-//  require("login_autentica.php");
-require("connection/conectarse.php");
-require("connection/arrays.php");
-require("connection/funciones.php");
-require("connection/funciones_clases.php");
-require("connection/sql_transact.php");
-require("connection/llenatablas.php");
-require("connection/PasswordHash.php");
-require("definirvar.php");
-date_default_timezone_set("America/Bogota");
-
+require("login_autentica.php");
+$id_usuario = $_SESSION['usuario_id'];
+$id_nombre = $_SESSION['usuario_nombre'];
+$nivel_acceso = $_SESSION['usuario_rol'];
+$id_sedes = $_SESSION['usu_idsede'];
+$enviarcorreo = $_REQUEST['enviarWhatsapp'];
+$enviarWhatsapp = $_REQUEST['enviarWhatsapp'];
 include("mpdf2/mpdf.php");
 
 include 'barcode.php';
@@ -22,14 +18,66 @@ $DB2->conectar();
 $tiposervicio = "";
 @$pagina2 = $_REQUEST["pagina2"];
 @$imprimir = $_REQUEST["imprimir"];
-$vis=$_GET['vis'];
+$precioinicialkilos = $_SESSION['precioinicial'];
+
+
+
+// function enviar_mail_con_pdf($usu_mail, $pdf_temp_path, $mensaje, $persona, $asunto, $imagen)
+// {
+//   require_once("connection/class.phpmailer.php");
+
+//   global $bandera;
+//   // Crear instancia de PHPMailer
+//   $mail = new PHPMailer();
+
+//   // Configurar el remitente, nombre y asunto
+//   $mail->From = "logistica@transmillas.com";
+//   $mail->FromName = "Transmillas";
+//   $mail->Subject =  $asunto;
+
+//   // Configurar el cuerpo del correo electrónico
+//   $mail->Body = $mensaje;
+
+//   // Añadir destinatarios
+//   foreach ($usu_mail as $mails) {
+//     $mail->AddAddress($mails);
+//   }
+
+//   try {
+//     // Adjuntar el PDF al correo electrónico
+//     $pdf_real_path = realpath($pdf_temp_path);
+//     if (!$mail->addAttachment($pdf_temp_path, $pdf_temp_path)) {
+//       throw new Exception('Error al adjuntar el archivo PDF: ' . $mail->ErrorInfo);
+//     }
+
+//     // Enviar el correo electrónico
+//     if (!$mail->Send()) {
+//       throw new Exception('Error al enviar el correo electrónico: ' . $mail->ErrorInfo);
+//     }
+
+//    // echo "Correo enviado correctamente" . $pdf_temp_path;
+//     $bandera=3;
+//   } catch (Exception $e) {
+//    // echo "Error: " . $e->getMessage();
+//    $bandera=4;
+//   }
+
+//   // Eliminar el archivo PDF temporal
+//    unlink($imagen);
+//   // Eliminar el archivo Imagen temporal
+//    unlink($pdf_temp_path);
+
+ 
+
+// }
+
 ?>
 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/html2canvas.js"></script>
 <script type="text/javascript">
-  
+  var nivel = '<?php echo $nivel_acceso;  ?>';
   var redirecionar = '<?php echo $pagina2;  ?>';
 
  
@@ -60,20 +108,13 @@ $vis=$_GET['vis'];
                 var dataURL = canvasWithWhiteBackground.toDataURL("image/jpeg");
 
                 // Descargar la imagen localmente
-                const vis = '<?php echo $vis; ?>';
-                console.log(vis);
-                if (vis=="adm") {
-
-                }else{
-
-                    var link = document.createElement('a');
-                    link.href = dataURL;
-                    link.download = filename;
-                    link.click();
-                }
+                // var link = document.createElement('a');
+                // link.href = dataURL;
+                // link.download = filename;
+                // link.click();
 
                 // Enviar la imagen al servidor
-                // uploadToServer(dataURL, filename,tipo,idServicio,factura);
+                uploadToServer(dataURL, filename,tipo,idServicio,factura);
             }
         });
     }
@@ -112,12 +153,9 @@ $vis=$_GET['vis'];
     /* justify-content: center; */
     /* align-items: center; */
     flex-direction: column;
-    background-image: url('img/menbrete.jpg');
+    background-image: url('Guias/menbrete.jpg');
     background-repeat: no-repeat; 
     height: 3000px;
-    transition: transform 0.3s ease-in-out;
-    transform-origin: center top;
-
     /* Evita que la imagen se repita */
    /* background-position: center; 
     /* Centra la imagen */
@@ -165,12 +203,10 @@ $vis=$_GET['vis'];
 /* Para el pop Up*/ 
 /* Estilos básicos para el pop-up */
 body {
-            place-items: center;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-
         }
 
         .overlay {
@@ -227,43 +263,15 @@ body {
             height: 25px; /* Alto del icono */
             object-fit: cover; /* Ajusta el contenido dentro del tamaño */
         }
-
-
-        .zoom-controls {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            gap: 10px;
-            z-index: 1000;
-        }
-
-        .zoom-controls button {
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            
-            color: white;
-            border: none;
-            border-radius: 5px;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        /*Evita que los botones se escalen con el body*/
-        .zoom-controls button {
-            transform: none !important;
-        }
 </style>
 
 <?php
 
 $date = date("Y-m-d");
 
+$sql2 = "SELECT `idsedes`, `sed_nombre`, `sed_telefono`, `sed_direccion` FROM `sedes` WHERE idsedes=$id_sedes";
+$DB1->Execute($sql2);
+$rw2 = mysqli_fetch_array($DB1->Consulta_ID);
 
 
 
@@ -274,50 +282,7 @@ $date = date("Y-m-d");
 $DB->Execute($sql);
 $rw = mysqli_fetch_array($DB->Consulta_ID);
 
-if (isset($_GET['peso'])) {
-if ($_GET['peso']!="") {
-  $rw[16]=$_GET['peso'];
-  // echo "$var llegó con el valor: " . $_GET['peso'] . "<br>";
-}
 
-} 
-if (isset($_GET['volumen'])) {
-  if ($_GET['volumen']!="") {
-  $rw[22]=$_GET['volumen'];
-  }
-  // echo "$var llegó con el valor: " . $_GET[$var] . "<br>";
-} 
-if (isset($_GET['seguro'])) {
-  if ($_GET['seguro']!="") {
-  $rw[12]=$_GET['seguro'];
-  }
-  // echo "$var llegó con el valor: " . $_GET[$var] . "<br>";
-}
-if (isset($_GET['valorf'])) {
-  if ($_GET['valorf']!="") {
-  $rw[15]=$_GET['valorf'];
-  }
-  // echo "$var llegó con el valor: " . $_GET[$var] . "<br>";
-} 
-
-if ($imprimir == "Entrega" or $imprimir == "Entregar") {
-    $sql0 = "SELECT idciudades,inner_sedes FROM `ciudades`  where  ciu_nombre=$rw[5]";
-    $DB1->Execute($sql0);
-    $rw0 = mysqli_fetch_array($DB1->Consulta_ID);
-
-    $sql2 = "SELECT `idsedes`, `sed_nombre`, `sed_telefono`, `sed_direccion` FROM `sedes` WHERE idsedes=$rw0[1]";
-    $DB1->Execute($sql2);
-    $rw2 = mysqli_fetch_array($DB1->Consulta_ID);
-
-  }elseif ($imprimir == "Recogida") {
-    $sql0 = "SELECT idciudades,inner_sedes FROM `ciudades`  where  idciudades=$rw[17]";
-    $DB1->Execute($sql0);
-    $rw0 = mysqli_fetch_array($DB1->Consulta_ID);
-
-    $sql2 = "SELECT `idsedes`, `sed_nombre`, `sed_telefono`, `sed_direccion` FROM `sedes` WHERE idsedes=$rw0[1]";
-    $DB1->Execute($sql2);
-    $rw2 = mysqli_fetch_array($DB1->Consulta_ID);
-  }
 
 $sql3 = "SELECT ciu_nombre FROM `ciudades`  where idciudades=$rw[17]";
 $DB2->Execute($sql3);
@@ -355,7 +320,7 @@ $Usuariog = $userg[0] . " " . $userg[1];
 if ($rw[9] == 'Credito') {
   $fechatiempo = $rw[28];
 }
-
+$nivel_acceso;
 // <img src='img/logofactura.png' alt='Logotipo' />
 
 $html = "
@@ -529,13 +494,10 @@ $html .= "
         <td class='columna2'> <b>No ha sido pesado</b></td>
         </tr>	";
       }else {
-        if ($rw[16]>= 30) {
-          $html .= "<tr>
-            <th class='columna1'>PESO Kg:</th>
-            <td class='columna2'>$rw[16]</td>
+        $html .= "<tr>
+              <th class='columna1'>PESO Kg:</th>
+              <td class='columna2'>$rw[16]</td>
           </tr>	";
-        }
-
       }
 
 // if ($rw[16] <= $precioinicialkilos) {
@@ -690,20 +652,19 @@ if ($imprimir == "Recogida") {
   $documento = $fila['numero_documento'];
   $telefono = $fila['telefono'];
   $correo = $fila['correo_electronico'];
-  if($vis!='peso'){ 
-        $html .= "<tr><td colspan=2 class='columna3'>
-          <div style='display: inline-block; text-align: left;'>
-              <div style='width:500px;height:500px; overflow: hidden; border: 1px solid black;'>
-                  <img src='$imagen_base64' style='width: 500px; height:500px;' alt='Firma'/>
-              </div>
-              <div>FIRMA ENTREGA</div>
-          </div>
-          <div>QUIEN ENTREGA: $nombre</div>
-          <div>CC/NIT: $documento</div>
-          <div>Teléfono: $telefono</div>
-      </td></tr>";
-    } 
-}
+
+  $html .= "<tr><td colspan=2 class='columna3'>
+    <div style='display: inline-block; text-align: left;'>
+        <div style='width:auto;height:auto; overflow: hidden; border: 1px solid black;'>
+            <img src='$imagen_base64' style='width: auto; height:auto;' alt='Firma'/>
+        </div>
+        <div>FIRMA ENTREGA</div>
+    </div>
+    <div>QUIEN ENTREGA: $nombre</div>
+    <div>CC/NIT: $documento</div>
+    <div>Teléfono: $telefono</div>
+</td></tr>";
+} 
 
 if ($imprimir == "Entrega" or $imprimir == "Entregar") {
 
@@ -743,8 +704,8 @@ if ($imprimir == "Entrega" or $imprimir == "Entregar") {
 
   $html .= "<tr><td colspan=2 class='columna3'>
     <div style='display: inline-block; text-align: center;'>
-    <div style='width:500px; height:500px; overflow: hidden; border: 1px solid black;'>
-    <img src='$imagen_base64' style='width:500px; height:500px;' alt='Firma'/>
+    <div style='width:auto;height:auto; overflow: hidden; border: 1px solid black;'>
+    <img src='$imagen_base64' style='width: auto; height:auto;' alt='Firma'/>
         </div>
         <div>FIRMA RECIBE</div>
     </div>
@@ -789,7 +750,7 @@ $html .= "<div style='text-align: center;'>
             </td>
             </tr>
             <tr><td>
-            <p><b><img src='img/bancolombia.png' style='width:50px;height:50px;' ></b></p>
+            <p><b><img src='Guias/bancolombia.png' style='width:50px;height:50px;' ></b></p>
               
               </td>
               <td><p><b></b></p></td>
@@ -798,7 +759,7 @@ $html .= "<div style='text-align: center;'>
             <p><b></b></p>
               
               </td>
-              <td><p><b><img src='img/superTrans.png' style='width:300px;height:100px;' ></b></p></td>
+              <td><p><b><img src='Guias/superTrans.png' style='width:300px;height:100px;' ></b></p></td>
             </tr>
           </div>";
 
@@ -825,7 +786,6 @@ $data = $code;
   <div id="loading" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
     <img src="img/enviando.gif" alt="Cargando..." />
 </div>
-
     <?php
     if($enviarcorreo!=3){
        echo $html;
@@ -923,27 +883,108 @@ $data = $code;
    $telefonosJson = json_encode($telefonos);
     ?>
   </div>
-  <div class="zoom-controls">
-        <button onclick="zoomOut()">➖</button>
-        <button onclick="zoomIn()">➕</button>
-  </div>
- 
-</body>
 
+  
+
+</body>
+<script>
+  // Espera a que el documento esté listo para actualizar el botón con las variables PHP
+  document.addEventListener('DOMContentLoaded', () => {
+    const telefonos = '<?php echo $telefonosJson; ?>';
+    const imagen1 = '<?php echo $imagen1; ?>';
+
+    document.getElementById('guardar').setAttribute('onclick', `enviarAlertaWhat('', '${telefonos}', '23', '', '${imagen1}')`);
+  });
+async function enviarAlertaWhat(numguia, telefonos, tipo, idservi,imagen1) {
+    // Mostrar el GIF de carga
+    const loadingDiv = document.getElementById("loading");
+    loadingDiv.style.display = "block";
+    // URL de la API
+    const url = "https://www.transmillas.com/ChatbotTransmillas/alertas.php";
+
+    const telefonosjs = JSON.parse(telefonos);
+
+    for (const telefono of telefonosjs) {
+      console.log(telefono); 
+       if (telefono=="") {
+        
+       }else{
+        
+          // console.log(`Teléfono ${index + 1}: ${telefono}`);
+        
+        // Datos a enviar en la solicitud
+        const data = {
+            numero_guia: numguia, // Número de guía
+            telefono: telefono,    // Número de teléfono
+            tipo_alerta: tipo,     // Tipo de alerta
+            id_guia: idservi,     // ID de la guía
+            imagen1: imagen1
+        };
+
+        try {
+            // Realizar la solicitud POST con fetch
+            const response = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer MiSuperToken123" // Si la API requiere autenticación
+                },
+                body: JSON.stringify(data) // Convertir los datos a JSON
+            });
+
+            // Verificar si la respuesta fue exitosa
+            if (!response.ok) {
+                throw new Error(`Error en la solicitud: ${response.statusText}`);
+            }
+
+            // Decodificar la respuesta
+            const responseData = await response.json();
+            
+            // Mostrar la respuesta
+            console.log("Respuesta de la API:", responseData);
+            // alert("Respuesta"+ JSON.stringify(responseData));
+            // Muestra solo el mensaje de éxito (o el campo específico que necesites)
+          // if (responseData.message) {
+          // 	alert(responseData.message); // Muestra solo el mensaje
+          // } else {
+          // 	alert("Operación realizada con éxito");
+          // }
+        } catch (error) {
+            // Manejar errores
+            console.error("Error en la solicitud:", error);
+            alert("Error al enviaral numero."+telefono);
+
+        }
+     }
+    }
+        // Ocultar el GIF de carga
+        loadingDiv.style.display = "none";
+  alert("Los mensajes han sido enviados.");
+   window.location.href = "inicio.php";
+}
+
+
+
+</script>
+ <!-- Contenedor del Pop-up -->
+ <div class="overlay" id="popup">
+        <div class="popup">
+            <h2>¡Atención da clikc para enviar el whatsapp!</h2>
+          
+            <button id="guardar" class="b-what">Enviar Whatsapp</button>
+        </div>
+    </div>
 
     <script>
-        let scale = 1;
+        // Lógica para cerrar el pop-up
+        document.getElementById('guardar').addEventListener('click', function () {
+            document.getElementById('popup').style.display = 'none';
+        });
 
-        function zoomIn() {
-            scale += 0.1;
-            document.getElementById("imagen").style.transform = `scale(${scale})`;
-        }
-
-        function zoomOut() {
-            if (scale > 0.5) {
-                scale -= 0.1;
-                document.getElementById("imagen").style.transform = `scale(${scale})`;
+        // Evitar que el usuario cierre el pop-up por cualquier otro medio
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                event.preventDefault(); // Bloquea el uso de la tecla Escape
             }
-        }
+        });
     </script>
-

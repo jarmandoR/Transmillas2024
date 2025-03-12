@@ -103,6 +103,7 @@ echo "</tr>";
 
 $FB->titulo_azul1("Guias",1,0,7); 
 $FB->titulo_azul1("Pre-Guia",1,0,0); 
+$FB->titulo_azul1("Imagen",1,0,0); 
 $FB->titulo_azul1("Tipo PQ",1,0,0); 
 $FB->titulo_azul1("Descripcion",1,0,0); 
 $FB->titulo_azul1("Destinatario",1,0,0); 
@@ -142,7 +143,18 @@ $DB->Execute($sql); $va=0;
 		$rw1[6]=str_replace("&"," ", $rw1[6]);
 		echo "
 		<td>".$rw1[1]."</td>
-		<td>".$rw1[7]."</td>
+		<td>".$rw1[7]."</td>";
+		$sqlimg="SELECT ser_img_recog,ser_img_entre from servicios where idservicios=$id_p ";
+		$DB1->Execute($sqlimg); 
+		$img=mysqli_fetch_row($DB1->Consulta_ID);
+		if ($img[0]!="") {
+			echo "<td align='center' >";
+					echo "<a href='imgServicios/$img[0]' target='_blank'>Ver</td>";
+		}else {
+			echo "<td align='center' >";
+			echo "</td>";
+		}
+		echo "
 		<td>".$rw1[2]."</td>
 		<td>".$rw1[3]."</td>
 		<td>".$rw1[4]."</td>
