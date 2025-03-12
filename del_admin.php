@@ -18,8 +18,17 @@ switch($tabla)
 	$valores[8]=1; $valores[4]=$_SERVER["HTTP_REFERER"]; $id_param=""; $ir=1;
 	break;
 	case "Elimina Archivo2":
-		$valores[7]="DELETE FROM imagenguias WHERE idimagenguias='$id_param'";
+		echo$valores[7]="DELETE FROM imagenguias WHERE idimagenguias='$id_param'";
 		$ruta = $_REQUEST["ruta"];
+		if (strpos($ruta, 'ticketfacturacorreoimprimir') !== false) {
+		
+			$idFirma=$_REQUEST["idFirma"];
+				$sel="DELETE FROM `firma_clientes` WHERE id_guia=$idFirma";
+
+			$DB1->Execute($sel);
+		}
+
+		
 		if (file_exists($ruta)) {
 			unlink($ruta);
 		} 
