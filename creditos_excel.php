@@ -145,13 +145,23 @@ $totalcontado=0;
 			$colorfoto="#e74c3c";
 			$confoto="Sin foto";
 		}else {
-			if ($guiasi[3]<"2024-05-30") {
+			if ($guiasi[3]<"2024-10-31") {
 				$colorfoto="";
-				$confoto="https://b9e4-190-25-33-50.ngrok-free.app/SistemaTransmillas/$foto";
+				$confoto="https://78a8-186-28-38-26.ngrok-free.app/SistemaTransmillas/$foto";
 				
-			}else {
+			}elseif ($guiasi[3]<="2025-02-13") {
 				$colorfoto="";
+				
 				$confoto="https://sistema.transmillas.com/$foto";
+			}else{
+
+				if (strpos($foto, 'ticketfacturacorreoimprimir') !== false) {
+					$confoto="$foto&vis=adm";
+				}else{
+					$confoto="https://sistema.transmillas.com/$foto";
+
+				}
+				
 				
 			}
 

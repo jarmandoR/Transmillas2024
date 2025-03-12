@@ -5,6 +5,31 @@
     text-decoration: none;
     color: inherit;
   }
+  .whatsapp-button {
+            display: flex;
+            align-items: center;
+            background-color: #25D366;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.05);
+        }
+
+        .whatsapp-button img {
+            width: 18px;
+            height: 18px;
+            margin-right: 6px;
+        }
 </style>
 <?php 
 require("login_autentica.php"); 
@@ -166,7 +191,10 @@ if($nivel_acceso==6){
 			$FB->titulo_azul1("Ciudad",1,0,0); 
 			$FB->titulo_azul1("Servicio",1,0,0); 
 			$FB->titulo_azul1("Recogida",1,0,0); 
+			$FB->titulo_azul1("Imagen",1,0,0); 
+
 			$FB->titulo_azul1("Entrega",1,0,0); 
+			$FB->titulo_azul1("Imagen",1,0,0); 
 
 			$FB->titulo_azul1("Guia",1,0,0); 
 			$FB->titulo_azul1("Imprimir",1,0,0); 
@@ -217,17 +245,34 @@ if($nivel_acceso==6){
 					$idimagenent=0;
 					$idimagenre=0;
 
-					 $sqlrecogida="SELECT ima_ruta,ima_tipo,idimagenguias from imagenguias where ima_idservicio=$id_p ";
+					$sqlrecogida="SELECT ima_ruta,ima_tipo,idimagenguias,ima_fecha from imagenguias where ima_idservicio=$id_p ";
 					$DB1->Execute($sqlrecogida); 
 					while($guiasi=mysqli_fetch_row($DB1->Consulta_ID))
 					{
 
 						if($guiasi[1]=='Recogida'){
+							$fechareco=$guiasi[3];
 							$recogidasg=$guiasi[0];
 							$idimagenre=$guiasi[2];
 						}elseif($guiasi[1]=='Entrega'){
 							$entrgasg=$guiasi[0];
 							$idimagenent=$guiasi[2];
+							$fechaent=$guiasi[3];
+						}
+
+					}
+					
+					$firma="SELECT firma,tipo_firma,id  FROM firma_clientes WHERE  id_guia='$id_p' ";
+					$DB1->Execute($firma); 
+					while($firmaid=mysqli_fetch_row($DB1->Consulta_ID))
+					{
+
+						if($firmaid[1]=='Recogida'){
+							$firmaidR=$firmaid[2];
+
+						}elseif($firmaid[1]=='Entrega'){
+							$firmaidE=$firmaid[2];
+
 						}
 
 					}
@@ -239,21 +284,58 @@ if($nivel_acceso==6){
 						echo "<p style='color: #808080;' >&nbsp;<i></i>&nbsp;Ver Foto Guia </p>";
 						}else {
 						echo "<td align='center' >";
-						echo "<a href='$recogidasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+						
+						
+						if ($fechareco<"2024-12-01") {
+							$colorfoto="";
+							echo"<a href=' https://78a8-186-28-38-26.ngrok-free.app/SistemaTransmillas/$recogidasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+							
+						}elseif ($fechareco<="2025-02-13") {
+							$colorfoto="";
+							echo"<a href='$recogidasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia hh</a>";
+							
+						}else{
+							$rutar=$entrgasg;
+							if (strpos($recogidasg, 'ticketfacturacorreoimprimir') !== false) {
+								$recogidasg="$recogidasg&vis=adm";
+								$rutar="";
+							} 
+							$colorfoto="";
+							// $confotor="<a href='$recogidag&vis=adm'' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";enviarAlertaWhat(\"".$rw1[12]."\",\"".$rw1[3]."\",24,\"".$rw1[0]."\",\"".$recogidasg."\")
+							 echo "<a href='$recogidasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia hh</a>";
+							 echo"<button onclick='pop_dis5($id_p,\"Enviar Guia R\")' class='whatsapp-button'>Whatsapp</button>";
+							 
 						}
+					}
 
 
 						if($nivel_acceso==1){
-						echo "<br><a href='del_admin.php?id_param=$idimagenre&tabla=Elimina Archivo2&ruta=$recogidasg' title='Eliminar' 
+						echo "<br><a href='del_admin.php?id_param=$idimagenre&tabla=Elimina Archivo2&ruta=$rutar&idFirma=$firmaidR' title='Eliminar' 
 						onClick='return confirm(\"".utf8_encode("Est&aacute; seguro de eliminar este registro?")."\")'><i class='fa fa-trash-o'></i></a>";
-						}
+						
+						// echo "<br><a href='$recogidasg'><i class='fa fa-trash-o'></i></a>";
+						
+						
+					}
 						echo "</td>";	
 	
 					}else{
 						$guiatipo=$rw1[11]."_Recogida";
 						echo "<td align='center' >";
-						echo "<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"$guiatipo\")';  style='cursor: pointer;' title='foto Guia' >Subir Foto Guia</a></td>";
-			
+						echo "<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"$guiatipo\")';  style='cursor: pointer;' title='foto Guia' >Subir Foto Guia</a>";
+						echo"<button onclick='abrirPopup(\"".$rw1[11]."\",\"Recogida\",$id_p)'>Ratificar</button></td>";
+
+					}
+
+					$sqlimg="SELECT ser_img_recog,ser_img_entre from servicios where idservicios=$id_p ";
+					$DB1->Execute($sqlimg); 
+					$img=mysqli_fetch_row($DB1->Consulta_ID);
+					if ($img[0]!="") {
+						echo "<td align='center' >";
+								echo "<a href='imgServicios/$img[0]' target='_blank'>Ver</td>";
+					}else {
+						echo "<td align='center' >";
+						echo "</td>";
 					}
 
 					if($entrgasg!=''){
@@ -263,12 +345,33 @@ if($nivel_acceso==6){
 							echo "<p style='color: #808080;' >&nbsp;<i></i>&nbsp;Ver Foto Guia </p>";
 							}else {
 								echo "<td align='center' >";
-								echo "<a href='$entrgasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+								if ($fechaent<"2024-12-01") {
+									$colorfoto="";
+									echo"<a href='  https://78a8-186-28-38-26.ngrok-free.app/SistemaTransmillas/$recogidag' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+									
+								}elseif ($fechaent<="2025-02-13") {
+									$colorfoto="";
+									echo"<a href='$entrgasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+									
+								}else{
+									$rutae=$entrgasg;
+									if (strpos($entrgasg, 'ticketfacturacorreoimprimir') !== false) {
+										$entrgasg="$entrgasg&vis=adm";
+										$rutae="";
+									} 
+									$colorfoto="";
+									// $confotor="<a href='$entrgasg&vis=adm'' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+									// echo "<a href='$entrgasg&vis=adm' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia E</a></td>";
+									echo "<a href='$entrgasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+									echo"<button onclick='pop_dis5($id_p,\"Enviar Guia E\")' class='whatsapp-button'>Whatsapp</button>";
+									
+								}
 								
+								// echo "<br><a href='$entrgasg&vis=adm'><i class='fa fa-trash-o'></i></a>";
 							}
 						
 						if($nivel_acceso==1){
-						echo "<br><a href='del_admin.php?id_param=$idimagenent&tabla=Elimina Archivo2&ruta=$entrgasg' title='Eliminar' 
+						echo "<br><a href='del_admin.php?id_param=$idimagenent&tabla=Elimina Archivo2&ruta=$rutae&idFirma=$firmaidE' title='Eliminar' 
 						onClick='return confirm(\"".utf8_encode("Est&aacute; seguro de eliminar este registro?")."\")'><i class='fa fa-trash-o'></i></a>";
 						}
 						echo "</td>";		
@@ -276,8 +379,16 @@ if($nivel_acceso==6){
 					}else{
 						$guiatipo=$rw1[11]."_Entrega";
 						echo "<td align='center' >";
-						echo "<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"$guiatipo\")';  style='cursor: pointer;' title='foto Guia' >Subir Foto Guia</a></td>";
-			
+						echo "<a  onclick='pop_dis16($id_p,\"Fotoguia\",\"$guiatipo\")';  style='cursor: pointer;' title='foto Guia' >Subir Foto Guia</a>";
+						echo"<button onclick='abrirPopup(\"".$rw1[11]."\",\"Entrega\",$id_p)'>Ratificar</button></td>";
+
+					}
+					if ($img[1]!="") {
+						echo "<td align='center' >";
+								echo "<a href='imgServicios/$img[1]' target='_blank'>Ver</td>";
+					}else {
+						echo "<td align='center' >";
+						echo "</td>";
 					}
 
 
@@ -412,8 +523,61 @@ if($nivel_acceso==3 and $preop>=1){
 
 	<?php 	
 		
-}		
+}	
+
 include("footer.php");
 ?>
+<script>
+	function abrirPopup(idguia,imprimir,id_param) {
 
+		window.open("ratificafirmadigital.php?idguia="+idguia+"&imprimir="+imprimir+"&id_param="+id_param+"", "popup", "width=600,height=400");
+	}
+
+	async function enviarAlertaWhat(numguia, tipo, idservi,imagen1) {
+		var telefono = document.getElementById('tele').value;
+    // URL de la API
+    const url = "https://www.transmillas.com/ChatbotTransmillas/alertas.php";
+
+    // Datos a enviar en la solicitud
+    const data = {
+        numero_guia: numguia, // Número de guía
+        telefono: telefono,    // Número de teléfono
+        tipo_alerta: tipo,     // Tipo de alerta
+        id_guia: idservi,
+		imagen1: imagen1      // ID de la guía
+    };
+
+    try {
+        // Realizar la solicitud POST con fetch
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer MiSuperToken123" // Si la API requiere autenticación
+            },
+            body: JSON.stringify(data) // Convertir los datos a JSON
+        });
+
+        // Verificar si la respuesta fue exitosa
+        if (!response.ok) {
+            throw new Error(`Error en la solicitud: ${response.statusText}`);
+        }
+
+        // Decodificar la respuesta
+        const responseData = await response.json();
+        
+        // Mostrar la respuesta
+        console.log("Respuesta de la API:", responseData);
+		    // Muestra solo el mensaje de éxito (o el campo específico que necesites)
+			// if (responseData.message) {
+			// 	alert(responseData.message); // Muestra solo el mensaje
+			// } else {
+			 	alert("Mensaje enviado con exito");
+			// }
+    } catch (error) {
+        // Manejar errores
+        console.error("Error en la solicitud:", error);
+    }
+}
+</script>
 

@@ -77,28 +77,68 @@ $DB->Execute($sql); $va=0;
 		<td>".$rw1[16]."</td>
 		<td>".$rw1[17]."</td>
 		";
-
-		echo$sqlrecogida="SELECT ima_ruta,ima_tipo,idimagenguias,ima_fecha from imagenguias where ima_tipo like '%Entrega%' and  ima_idservicio=$id_p ";
+		$sqlrecogida ="SELECT ima_ruta,ima_tipo,idimagenguias,ima_fecha from imagenguias where ima_tipo like '%Recogida%' and  ima_idservicio=$id_p ";
 		$DB1->Execute($sqlrecogida); 
-		$guiasi=mysqli_fetch_row($DB1->Consulta_ID);
-		$entrgasg=$guiasi[0];
-		if ($entrgasg=='') {
+		$guiasir=mysqli_fetch_row($DB1->Consulta_ID);
+		$recogidag=$guiasir[0];
+		if ($recogidag=='') {
 			$colorfoto="#e74c3c";
-			$confoto="Sin foto";
+			$confotor="Sin foto";
 		}else {
-			if ($guiasi[3]<"2024-05-30") {
+			if ($guiasir[3]<"2024-10-31") {
 				$colorfoto="";
-				$confoto="<a href='https://b9e4-190-25-33-50.ngrok-free.app/SistemaTransmillas/$entrgasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+				$confotor="<a href=' https://78a8-186-28-38-26.ngrok-free.app/SistemaTransmillas/$recogidag' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
 				
-			}else {
+			}elseif ($guiasir[3]<="2025-02-13") {
 				$colorfoto="";
-				$confoto="<a href='$entrgasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+				$confotor="<a href='$recogidag' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+				
+			}else{
+				$colorfoto="";
+				if (strpos($recogidag, 'ticketfacturacorreoimprimir') !== false) {
+					$recogidag="$recogidag&vis=adm";
+				} 
+				$confotor="<a href='$recogidag' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
 				
 			}
 
 
 		}
 
+		$confoto="";
+		$sqlentrega="SELECT ima_ruta,ima_tipo,idimagenguias,ima_fecha from imagenguias where ima_tipo like '%Entrega%' and  ima_idservicio=$id_p ";
+		$DB1->Execute($sqlentrega); 
+		$guiasi=mysqli_fetch_row($DB1->Consulta_ID);
+		$entrgasg=$guiasi[0];
+		if ($entrgasg=='') {
+			$colorfoto="#e74c3c";
+			$confoto="Sin foto";
+		}else {
+			if ($guiasi[3]<"2024-10-31") {
+				$colorfoto="";
+				$confoto="<a href='  https://78a8-186-28-38-26.ngrok-free.app/SistemaTransmillas/$entrgasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+				
+			}elseif ($guiasi[3]<="2025-02-13") {
+				$colorfoto="";
+				$confoto="<a href='$entrgasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+			}else{
+				$colorfoto="";
+				if (strpos($entrgasg, 'ticketfacturacorreoimprimir') !== false) {
+					$entrgasg="$entrgasg&vis=adm";
+				}else {
+					$entrgasg=$guiasi[0];
+				}
+					$confoto="<a href='$entrgasg' target='_blank'>&nbsp;<i class='fa fa-camera-retro fa-lg'></i>&nbsp;Ver Foto Guia </a>";
+
+
+				
+			} 
+
+
+		}
+		$html1.= "<td align='center'  bgcolor='$colorfoto'>";
+		$html1.= "$confotor";
+		$html1.= "</td>";
 		$html1.= "<td align='center'  bgcolor='$colorfoto'>";
 		$html1.= "$confoto";
 		$html1.= "</td>";
@@ -155,7 +195,8 @@ $FB->titulo_azul1("Ciudad",1,0,0);
 $FB->titulo_azul1("Flete + %Seguro",1,0,0); 
 $FB->titulo_azul1("Credito",1,0,0); 
 $FB->titulo_azul1("Factura No",1,0,0); 
-$FB->titulo_azul1("Guia",1,0,0); 
+$FB->titulo_azul1("Guia R",1,0,0); 
+$FB->titulo_azul1("Guia E",1,0,0); 
 $FB->titulo_azul1("Imagen",1,0,0); 
 
 echo $html1;
